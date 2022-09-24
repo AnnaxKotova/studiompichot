@@ -1,0 +1,25 @@
+{
+  "name": "studiompichot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass-compile": "sass styles/scss/main.scss styles/css/style.css",
+    "sass-watch": "sass --watch styles/scss/main.scss styles/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnnaxKotova/studiompichot.git"
+  },
+  "author": "annakotova",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnnaxKotova/studiompichot/issues"
+  },
+  "homepage": "https://github.com/AnnaxKotova/studiompichot#readme",
+  "dependencies": {
+    "-": "^0.0.1",
+    "sass": "^1.55.0"
+  }
+}
