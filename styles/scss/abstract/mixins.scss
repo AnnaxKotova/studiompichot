@@ -35,3 +35,19 @@
         scroll-snap-align: center;
     }
 }
+
+
+@mixin border-draw($width, $height, $top, $size){
+    position: relative;
+
+    &>.border::after {
+        background-image: url("../../../assets/images/border-figure.svg");
+        background-size: px-to-rems($width, $size) px-to-rems($height, $size);
+        position: absolute;
+        display: inline-block;
+        width: px-to-rems($width, $size);
+        top: -($top)*1px;
+        height: px-to-rems($height, $size);
+        content: "";
+    }
+}
