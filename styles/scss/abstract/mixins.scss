@@ -1,0 +1,37 @@
+@mixin media-min($_key) {
+    @media screen and (min-width: map-get($breakpoints, $_key)) {
+        &{ @content; }
+    }
+}
+
+
+
+@mixin media-max($_key) {
+    @media screen and (max-width: (map-get($breakpoints, $_key))) {
+        &{ @content; }
+    }
+}
+
+@mixin media-min-and-max($_key_min, $_key_max) {
+    @media screen and (min-width: ((map-get($breakpoints, $_key_min)) + 1px)) and (max-width: ((map-get($breakpoints, $_key_max)))) {
+        &{ @content; }
+    }
+}
+
+
+
+@mixin scroller{
+
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar{
+        display: none;
+      }
+
+    & > *{
+        scroll-snap-align: center;
+    }
+}

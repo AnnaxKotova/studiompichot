@@ -1,0 +1,8 @@
+@function px-to-rems($value, $key){
+    @return (($value / map-get($rootFontSize, $key)) * 1rem);
+}
+
+@function four-px-to-rems($top, $right, $bottom, $left, $key){
+    $commonValue: px-to-rems($top, $key) px-to-rems($right, $key) px-to-rems($bottom, $key)  px-to-rems($left, $key);
+    @return $commonValue;
+}

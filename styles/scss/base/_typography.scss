@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+.bold{
+    font-weight: 700;
+}
+
+.marydale{
+    color: $green;
+}
+
+//media query
+
+html{
+    @include media-min("bigDesktop"){
+        font-size: map-get($rootFontSize, "bigDesktop") * 1px;
+    }
+
+    @include media-min-and-max("mediumDesktop", "bigDesktop"){
+        font-size: map-get($rootFontSize, "mediumDesktop") * 1px;
+        // $fontsize: "mediumDesktop";
+    }
+
+    @include media-min-and-max("smallDesktop", "mediumDesktop"){
+        font-size: map-get($rootFontSize, "smallDesktop") * 1px;
+        // $fontsize: "smallDesktop";
+    }
+
+    @include media-min-and-max("tabletsLandscape", "smallDesktop"){
+        font-size: map-get($rootFontSize, "tabletsLandscape") * 1px;
+        // $fontsize: "tabletsLandscape";
+    }
+
+    @include media-min-and-max("mobiles", "tabletsLandscape"){
+        font-size: map-get($rootFontSize, "mobiles") * 1px;
+        // $fontsize: "mobiles";
+    }
+
+    @include media-max("mobiles"){
+        font-size: map-get($rootFontSize, "smallMobiles") * 1px;
+        // $fontsize: "mobiles";
+    }
+}
+
