@@ -37,16 +37,17 @@
 }
 
 
-@mixin border-draw($width, $height, $top, $size){
+@mixin border-draw($width, $height, $top, $right, $size){
     position: relative;
 
-    &>.border::after {
+    &::after {
         background-image: url("../../../assets/images/border-figure.svg");
         background-size: px-to-rems($width, $size) px-to-rems($height, $size);
         position: absolute;
         display: inline-block;
         width: px-to-rems($width, $size);
         top: -($top)*1px;
+        right: ($right)*1px;
         height: px-to-rems($height, $size);
         content: "";
     }

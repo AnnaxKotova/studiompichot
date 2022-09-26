@@ -1,8 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+@font-face {
+    font-family: "Quikens";
+    src: local("Quikens"),
+         url("../../../fonts/Quikens-Regular.otf") format("otf");
+  }
+
+  @font-face {
+    font-family: "Quikens";
+    src: local("Helvetica Neue"),
+         url("../../../fonts/Helvetica-Neue.ttf") format("ttf");
+  }
+
+
 *{
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
+}
+
+.quikens{
+    font-family: "Quikens";
 }
 
 .bold{
@@ -41,5 +58,24 @@ html{
         font-size: map-get($rootFontSize, "smallMobiles") * 1px;
         // $fontsize: "mobiles";
     }
+}
+
+
+
+.element-mobile{
+    @include media-min("tabletsPortrait"){
+      display: none !important;
+  }
+  }
+
+  .element-desktop{
+    @include media-max("tabletsPortrait"){
+      display: none !important;
+  }
+  }
+
+  
+img{
+    width: 100%;
 }
 
