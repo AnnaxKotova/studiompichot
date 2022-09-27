@@ -57,9 +57,10 @@ a {
   background-color: transparent;
 }
 
-a, a:hover, a:visited, a:active {
+a {
   display: inline-block;
   text-decoration: none;
+  color: unset;
 }
 
 /**
@@ -412,8 +413,11 @@ img {
   .header__items {
     display: flex;
   }
-  .header__items p {
+  .header__items a {
     margin-left: 3.1111111111rem;
+  }
+  .header__items a:active {
+    font-weight: 500;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1280px) {
@@ -426,10 +430,14 @@ img {
   .header__items {
     display: flex;
   }
-  .header__items p {
+  .header__items a {
     margin-left: 1.9444444444rem;
   }
+  .header__items a:active {
+    font-weight: 500;
+  }
 }
+
 @media screen and (max-width: 768px) {
   .header {
     min-width: 24.4285714286rem;
@@ -452,7 +460,6 @@ img {
     display: flex;
     flex-direction: column;
     margin-top: 3.9285714286rem;
-    height: 100%;
     margin-right: 2.6428571429rem;
     padding: 1.4285714286rem 1.7857142857rem 1.7857142857rem 2.5714285714rem;
     background-color: white;
@@ -492,37 +499,43 @@ img {
   .header .menu-burger {
     width: 1.9285714286rem;
   }
-}
-
-@media screen and (min-width: 768px) {
-  .navbar > menu {
-    display: flex;
-  }
-  .navbar > menu li {
-    font-size: 0.8888888889rem;
-    margin-left: 3.6666666667rem;
-  }
-}
-@media screen and (min-width: 768px) and (min-width: 769px) and (max-width: 1024px) {
-  .navbar > menu li {
-    margin-left: 2.1428571429rem;
-  }
-}
-@media screen and (max-width: 768px) {
-  .navbar > menu {
+  .header__items {
     margin-top: 6.5714285714rem;
+    display: flex;
+    flex-direction: column;
   }
-  .navbar > menu li {
-    font-size: 1rem;
-    margin-bottom: 2.7857142857rem;
+  .header__items > a {
+    margin-bottom: 2.1428571429rem;
+    margin-left: 2.2857142857rem;
   }
-}
-
-@media screen and (max-width: 768px) {
-  .active {
-    border-left: solid 6px #008A6F;
-    margin-left: -2.5714285714rem;
-    padding-left: 30px;
+  .header__items > a.active {
+    position: relative;
+  }
+  .header__items > a.active::before {
+    position: absolute;
+    left: -2.2857142857rem;
+    content: url(../../../assets/images/flower-pink.svg);
+  }
+  .header__contacts {
+    border-top: solid 1px #C3C3C3;
+    margin-top: 2.7142857143rem;
+    padding-top: 4rem;
+  }
+  .header__contacts > a {
+    display: flex;
+    margin-bottom: 1.0714285714rem;
+  }
+  .header__contacts > a > img {
+    width: 1.0714285714rem;
+    margin-right: 1.2142857143rem;
+  }
+  .header__social-networks {
+    margin-top: 4.9285714286rem;
+    display: flex;
+    align-items: center;
+  }
+  .header__social-networks > figure {
+    margin-right: 1.4285714286rem;
   }
 }
 

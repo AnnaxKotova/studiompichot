@@ -11,8 +11,11 @@
     }
     &__items {
       display: flex;
-      & p {
+      & a {
         margin-left: px-to-rems(56, "bigDesktop");
+        &:active{
+          font-weight: 500;
+        }
       }
     }
   }
@@ -24,110 +27,14 @@
     }
     &__items {
       display: flex;
-      & p {
+      & a {
         margin-left: px-to-rems(35, "bigDesktop");
-      }
-    }
-  }
-
-  @include media-max("tabletsPortrait") {
-    min-width: px-to-rems(342, "mobiles");
-    padding: four-px-to-rems(25, 36, 25, 36, "mobiles");
-
-    &__navbar {
-      overflow-y: scroll;
-      background-color: $gray;
-      transition: transform 0.3s;
-      transform: translateX(-100%);
-      -webkit-transition: transform 0.3s;
-      -webkit-transform: translateX(-100%);
-      z-index: 9;
-      height: 100vh;
-      position: absolute;
-      top: 0;
-      left: 0;
-
-      &--container {
-        display: flex;
-        flex-direction: column;
-        margin-top: px-to-rems(55, "mobiles");
-        height: 100%;
-        margin-right: px-to-rems(37, "mobiles");
-        padding: four-px-to-rems(20, 25, 25, 36, "mobiles");
-        background-color: white;
-      }
-      
-    }
-
-
-    &__close{
-      align-self: flex-end;
-    }
-
-    &__text-figure{
-
-      align-self: flex-end;
-      width: px-to-rems(120, "mobiles");
-      text-align: center;
-      font-size: 12px;
-@include border-draw(120, 120, 51, 3, "mobiles");
-transform: matrix(0.98, 0.19, -0.19, 0.98, 0, 0);
-    }
-    &__logo--mobile{
-      margin-top: px-to-rems(5, "mobiles");
-      width: px-to-rems(173, "mobiles");
-      margin-bottom: px-to-rems(10, "mobiles");
-    }
-
-    & .navbar-show {
-      width: 100%;
-      transform: translateX(0);
-      -webkit-transform: translateX(0);
-    }
-    & .menu-burger {
-      width: px-to-rems(27, "mobiles");
-    }
-  }
-}
-
-.navbar {
-  & > menu {
-    @include media-min("tabletsPortrait") {
-      display: flex;
-      & li {
-        font-size: px-to-rems(16, "bigDesktop");
-        margin-left: px-to-rems(66, "bigDesktop");
-        @include media-min-and-max("tabletsPortrait", "tabletsLandscape") {
-          margin-left: px-to-rems(30, "mobiles");
+        &:active{
+          font-weight: 500;
         }
       }
     }
-
-    @include media-max("tabletsPortrait") {
-      margin-top: px-to-rems(92, "mobiles");
-      & li {
-        font-size: px-to-rems(14, "mobiles");
-        margin-bottom: px-to-rems(39, "mobiles");
-      }
-    }
   }
-}
 
-.active {
-  @include media-max("tabletsPortrait") {
-    border-left: solid 6px $green;
-    margin-left: px-to-rems(-36, "mobiles");
-    padding-left: calc(36px - 6px);
-  }
-}
-
-.social-networks {
-  display: flex;
-  width: px-to-rems(45, "mobiles");
-  justify-content: space-between;
-  .header & {
-    position: absolute;
-    bottom: 10%;
-    right: px-to-rems(51, "mobiles");
-  }
+  
 }
