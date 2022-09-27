@@ -1,4 +1,5 @@
 .header {
+
   @include media-max("tabletsPortrait") {
     min-width: px-to-rems(342, "mobiles");
     padding: four-px-to-rems(25, 36, 25, 36, "mobiles");
@@ -98,13 +99,3 @@
   }
 }
 
-.social-networks {
-  display: flex;
-  width: px-to-rems(45, "mobiles");
-  justify-content: space-between;
-  .header & {
-    position: absolute;
-    bottom: 10%;
-    right: px-to-rems(51, "mobiles");
-  }
-}

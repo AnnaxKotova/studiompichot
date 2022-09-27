@@ -1,0 +1,141 @@
+.footer {
+  background-color: $black;
+  & a,
+  p {
+    color: white;
+  }
+  &__container {
+    display: flex;
+  }
+  &__legal-mentions {
+    text-align: center;
+  }
+
+  @include media-min("smallDesktop") {
+    padding: px-to-rems(91, "bigDesktop") 7.1% px-to-rems(31, "bigDesktop");
+    &__container {
+      justify-content: space-between;
+    }
+    &__logo {
+      width: px-to-rems(260, "bigDesktop");
+    }
+    &__social-networks {
+      width: px-to-rems(229, "bigDesktop");
+      &--container {
+        display: flex;
+        align-items: center;
+        margin-top: px-to-rems(33, "bigDesktop");
+        & figure {
+          margin-right: px-to-rems(18, "bigDesktop");
+        }
+      }
+    }
+
+    &__menu a {
+      margin-bottom: px-to-rems(33, "bigDesktop");
+    }
+
+    &__contacts {
+      & p {
+        margin-bottom: px-to-rems(33, "bigDesktop");
+      }
+    }
+
+    & a {
+      display: block;
+    }
+  }
+
+  @include media-min-and-max("tabletsPortrait", "smallDesktop") {
+    padding: four-px-to-rems(65, 80, 2, 80, "mobiles");
+    &__container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 1fr 2.5fr;
+      margin-bottom: px-to-rems(65, "mobiles");
+    }
+    &__logo {
+      grid-area: 1/1/2/3;
+      width: px-to-rems(192, "mobiles");
+    }
+    &__social-networks {
+      grid-area: 2/1/2/3;
+      align-self: end;
+      width: px-to-rems(169, "mobiles");
+      &--container {
+        display: flex;
+        align-items: center;
+        margin-top: px-to-rems(15, "mobiles");
+        & figure {
+          margin-right: px-to-rems(18, "mobiles");
+        }
+      }
+    }
+
+    &__menu {
+      grid-area: 2/2/2/3;
+      align-self: stretch;
+      & a {
+        margin-bottom: px-to-rems(15, "mobiles");
+      }
+    }
+
+    &__contacts {
+      grid-area: 2/3/3/4;
+      align-self: stretch;
+      & p {
+        margin-bottom: px-to-rems(15, "mobiles");
+      }
+    }
+
+    & a {
+      display: block;
+    }
+  }
+
+  @include media-max("tabletsPortrait") {
+    padding: four-px-to-rems(52, 36, 2, 36, "mobiles");
+    &__container {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: px-to-rems(45, "mobiles");
+    }
+    &__logo {
+      width: px-to-rems(178, "mobiles");
+      margin-bottom: px-to-rems(39, "mobiles");
+    }
+    &__social-networks {
+      display: flex;
+      flex-direction: column-reverse;
+      margin-bottom: px-to-rems(29, "mobiles");
+      &--container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: px-to-rems(20, "mobiles");
+        & > figure {
+          margin-left: px-to-rems(7, "mobiles");
+          margin-right: px-to-rems(7, "mobiles");
+        }
+      }
+    }
+    &__menu {
+      text-align: center;
+      & a {
+        display: block;
+        margin-bottom: px-to-rems(15, "mobiles");
+      }
+    }
+    &__contacts {
+      text-align: center;
+      & a,
+      p {
+        display: block;
+        margin-bottom: px-to-rems(15, "mobiles");
+      }
+    }
+    &__legal-mentions {
+      display: block;
+    }
+  }
+}
