@@ -36,7 +36,7 @@
     &__text-figure {
       align-self: flex-end;
       width: px-to-rems(120, "mobiles");
-      text-align: center;
+      // text-align: center;
       font-size: 12px;
       @include border-draw(120, 120, 51, 3, "mobiles");
       transform: matrix(0.98, 0.19, -0.19, 0.98, 0, 0);

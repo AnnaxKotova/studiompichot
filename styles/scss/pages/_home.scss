@@ -104,3 +104,90 @@
       }
   }
 }
+
+
+.studio-presentation{
+
+  @include media-min("smallDesktop") {
+  &__poster{
+    margin: px-to-rems(47, "bigDesktop") -2REM px-to-rems(168, "bigDesktop") 6.8%;
+    display: flex;
+    flex-direction: column;
+    & .button{
+      align-self: flex-end;
+      margin-top: px-to-rems(32, "bigDesktop");
+    }
+  }
+  &__realisations{
+    margin-top: px-to-rems(53, "bigDesktop");
+  }
+  &__line{
+    display: flex;
+    margin-right: -6.8%;
+    justify-content: space-between;
+  }
+  &__item{
+    flex: 0 0 32%;
+    & figure{
+      @include cover(374, "bigDesktop");
+    }
+  }
+  &__more{
+    margin-top: px-to-rems(30, "bigDesktop");
+    display: flex;
+    justify-content: flex-end;
+    & a{
+      display: flex;
+      & span{
+      border-bottom: solid 1px black;
+    }
+      & img{
+        width: px-to-rems(25, "bigDesktop");
+        margin-left: px-to-rems(18, "bigDesktop");
+      }
+    }
+  }
+}
+
+
+@include media-min-and-max("tabletsPortrait", "smallDesktop") {
+  &__poster{
+    margin: px-to-rems(47, "mobiles") -2rem px-to-rems(168, "mobiles") px-to-rems(20, "mobiles");
+    display: flex;
+    flex-direction: column;
+    & .button{
+      align-self: flex-end;
+      margin-top: px-to-rems(59, "mobiles");
+    }
+  }
+  &__realisations{
+    margin-top: px-to-rems(40, "mobiles");
+  }
+  &__line{
+    display: flex;
+    // margin-right: -6.8%; 
+    justify-content: space-between;
+  }
+  &__item{
+    flex: 0 0 32%;
+    & figure{
+      @include cover(205, "mobiles");
+    }
+  }
+  &__more{
+    margin-top: px-to-rems(26, "mobiles");
+    display: flex;
+    justify-content: flex-end;
+    & a{
+      display: flex;
+      & span{
+      border-bottom: solid 1px black;
+    }
+      & img{
+        width: px-to-rems(26, "mobiles");
+        margin-left: px-to-rems(18, "mobiles");
+      }
+    }
+  }
+}
+}

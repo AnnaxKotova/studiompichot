@@ -1,0 +1,48 @@
+.assets{
+    &__container{
+    position: relative;
+    }
+    &__decor{
+      position: absolute;
+    }
+}
+
+
+.studio-presentation{
+
+    @include media-min("smallDesktop") {
+        .text-figure{
+            width: px-to-rems(136, "bigDesktop")  ;
+            transform: matrix(0.95, 0.31, -0.31, 0.95, 0, 0);
+            top: -6%;
+            right: 18%;
+            & p{
+            @include border-draw(200, 160, 56, -37, "bigDesktop");
+        }
+        }
+        .flower--pink{
+            width: px-to-rems(47, "bigDesktop");
+            top: 3%;
+            right: 52%;
+        }
+        .mesexpertises--pink{
+            width: px-to-rems(195, "bigDesktop");
+            top: 47%;
+            right: 40%;
+            transform: matrix(0.98, -0.21, 0.21, 0.98, 0, 0);
+        }
+
+        .arrow{
+            width: px-to-rems(103, "bigDesktop");
+            top: 82%;
+            right: 96%;
+            transform: rotate(-52deg);
+        }
+        .text{
+            width: px-to-rems(123, "bigDesktop");
+            top: 94%;
+            right: 100%;
+            transform: matrix(0.96, -0.29, 0.29, 0.96, 0, 0);
+        }
+    }
+}
