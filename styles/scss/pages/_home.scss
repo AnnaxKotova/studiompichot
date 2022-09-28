@@ -1,0 +1,106 @@
+.intro {
+  text-align: center;
+  padding-left: unset;
+  padding-right: unset;
+
+  @include media-min("smallDesktop") {
+    & h1 {
+      margin-top: px-to-rems(131, "bigDesktop");
+    }
+    &__slogan {
+      position: relative;
+
+      width: 75%;
+      margin: auto;
+      & span,
+      p {
+        font-size: px-to-rems(70, "bigDesktop");
+
+        & img {
+          width: px-to-rems(37, "bigDesktop");
+        }
+      }
+    }
+    &__decor {
+      position: absolute;
+      width: px-to-rems(71, "bigDesktop");
+      left: 33%;
+      bottom: -12%;
+    }
+    &__description{
+
+        width: 33%;
+        margin:px-to-rems(32, "bigDesktop") auto;
+    }
+    &__button{
+        margin: px-to-rems(46, "bigDesktop") auto px-to-rems(131, "bigDesktop");
+    }
+  }
+
+
+
+  @include media-min-and-max("tabletsPortrait", "smallDesktop") {
+    & h1 {
+        margin-top: px-to-rems(100, "mobiles");
+      }
+      &__slogan {
+        position: relative;  
+        width: 75%;
+        margin: auto;
+        & span,
+        p {
+          font-size: px-to-rems(40, "mobiles");
+  
+          & img {
+            width: px-to-rems(25, "mobiles");
+          }
+        }
+      }
+      &__decor {
+        position: absolute;
+        width: px-to-rems(54, "mobiles");
+        left: 33%;
+        bottom: -12%;
+      }
+      &__description{
+            width: 38%;
+          margin: px-to-rems(32, "mobiles") auto 0;
+      }
+      &__button{
+          margin:px-to-rems(32, "mobiles") auto px-to-rems(100, "mobiles");
+      }
+  }
+
+
+  @include media-max("tabletsPortrait") {
+    & h1 {
+        margin-top: px-to-rems(127, "mobiles");
+      }
+      &__slogan {
+        position: relative;  
+        width: 75%;
+        margin: auto;
+        & span,
+        p {
+          font-size: px-to-rems(30, "mobiles");
+  
+          & img {
+            width: px-to-rems(19, "mobiles");
+          }
+        }
+      }
+      &__decor {
+        position: absolute;
+        width: px-to-rems(50, "mobiles");
+        left: 19%;
+        bottom: -12%;
+      }
+      &__description{
+            width: 59%;
+          margin: px-to-rems(27, "mobiles") auto 0;
+      }
+      &__button{
+          margin:px-to-rems(54, "mobiles") auto px-to-rems(136, "mobiles");
+      }
+  }
+}

@@ -1,3 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+.highlight--blue {
+  background-color: #0B5ABD;
+}
+.highlight--blue h1,
+.highlight--blue p,
+.highlight--blue span {
+  color: #F59EC1;
+}
+.highlight--blue.header a {
+  color: #F59EC1;
+}
+.highlight--blue img {
+  filter: invert(100%) sepia(95%) saturate(7315%) hue-rotate(278deg) brightness(98%) contrast(91%);
+}
+.highlight--blue .button {
+  background-color: #F59EC1;
+  color: #0B5ABD;
+}
+.highlight--green {
+  background-color: #008A6F;
+}
+.highlight--green h1,
+.highlight--green p,
+.highlight--green span {
+  color: #E0C6EE;
+}
+.highlight--green.header a {
+  color: #E0C6EE;
+}
+.highlight--green img {
+  filter: invert(80%) sepia(36%) saturate(329%) hue-rotate(219deg) brightness(100%) contrast(87%);
+}
+.highlight--green .button {
+  background-color: #E0C6EE;
+  color: #008A6F;
+}
+.highlight--lightBlue {
+  background-color: #AECBF0;
+}
+.highlight--lightBlue h1,
+.highlight--lightBlue p,
+.highlight--lightBlue span {
+  color: #0B5ABD;
+}
+.highlight--lightBlue.header a {
+  color: #0B5ABD;
+}
+.highlight--lightBlue img {
+  filter: invert(20%) sepia(67%) saturate(3859%) hue-rotate(206deg) brightness(89%) contrast(91%);
+}
+.highlight--lightBlue .button {
+  background-color: #0B5ABD;
+  color: #AECBF0;
+}
+.highlight--white {
+  background-color: white;
+}
+.highlight--white.header a {
+  color: #030007;
+}
+.highlight--white img {
+  filter: unset;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -5,7 +70,6 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -330,12 +394,12 @@ menu {
 }
 
 @font-face {
-  font-family: "Quikens";
-  src: local("Quikens"), url("../../../fonts/Quikens-Regular.otf") format("otf");
+  font-family: "quikens";
+  src: url(/../../../fonts/Quikens-Regular.otf);
 }
 @font-face {
-  font-family: "Quikens";
-  src: local("Helvetica Neue"), url("../../../fonts/Helvetica-Neue.ttf") format("ttf");
+  font-family: "Helvetica";
+  src: local("Helvetica Neue"), url(/../../../fonts/Helvetica-Neue.ttf) format("ttf");
 }
 * {
   font-family: "Poppins", sans-serif;
@@ -344,7 +408,7 @@ menu {
 }
 
 .quikens {
-  font-family: "Quikens";
+  font-family: "quikens";
 }
 
 .bold {
@@ -398,6 +462,109 @@ img {
   width: 100%;
 }
 
+h1 {
+  line-height: 1.45;
+}
+@media screen and (min-width: 1280px) {
+  h1 {
+    font-size: 1.6666666667rem;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1280px) {
+  h1 {
+    font-size: 1.7142857143rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 1.1428571429rem;
+    line-height: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  h2 {
+    font-size: 2.2222222222rem;
+    line-height: 3.3333333333rem;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1280px) {
+  h2 {
+    font-size: 2.1428571429rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 1.7142857143rem;
+    line-height: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  h3 {
+    font-size: 1.6666666667rem;
+    line-height: 2.5555555556rem;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1280px) {
+  h3 {
+    font-size: 1.7142857143rem;
+    line-height: 2.5rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  h3 {
+    font-size: 1.7142857143rem;
+    line-height: 2.5rem;
+  }
+}
+
+h4 {
+  font-weight: bold;
+}
+@media screen and (min-width: 1280px) {
+  h4 {
+    font-size: 1.2222222222rem;
+    line-height: 1.6666666667rem;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1280px) {
+  h4 {
+    font-size: 1.1428571429rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  h4 {
+    font-size: 1rem;
+  }
+}
+
+strong {
+  font-weight: unset;
+  font-family: unset;
+}
+
+@media screen and (min-width: 1280px) {
+  section {
+    padding: 5.8333333333rem 14.2% 5rem 7.1%;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1280px) {
+  section {
+    padding: 5.5rem 5.7142857143rem 4.2142857143rem 5.7142857143rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  section {
+    padding: 3.7142857143rem 2.5714285714rem 0.1428571429rem 2.5714285714rem;
+  }
+}
+
+.button {
+  border-radius: 4px;
+  padding: 1.0555555556rem 5%;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -405,7 +572,7 @@ img {
   margin: auto;
   position: sticky;
   top: 0;
-  background-color: white;
+  z-index: 99;
 }
 @media screen and (min-width: 1280px) {
   .header {
@@ -677,6 +844,105 @@ img {
   }
   .footer__legal-mentions {
     display: block;
+  }
+}
+
+.intro {
+  text-align: center;
+  padding-left: unset;
+  padding-right: unset;
+}
+@media screen and (min-width: 1280px) {
+  .intro h1 {
+    margin-top: 7.2777777778rem;
+  }
+  .intro__slogan {
+    position: relative;
+    width: 75%;
+    margin: auto;
+  }
+  .intro__slogan span,
+.intro__slogan p {
+    font-size: 3.8888888889rem;
+  }
+  .intro__slogan span img,
+.intro__slogan p img {
+    width: 2.0555555556rem;
+  }
+  .intro__decor {
+    position: absolute;
+    width: 3.9444444444rem;
+    left: 33%;
+    bottom: -12%;
+  }
+  .intro__description {
+    width: 33%;
+    margin: 1.7777777778rem auto;
+  }
+  .intro__button {
+    margin: 2.5555555556rem auto 7.2777777778rem;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1280px) {
+  .intro h1 {
+    margin-top: 7.1428571429rem;
+  }
+  .intro__slogan {
+    position: relative;
+    width: 75%;
+    margin: auto;
+  }
+  .intro__slogan span,
+.intro__slogan p {
+    font-size: 2.8571428571rem;
+  }
+  .intro__slogan span img,
+.intro__slogan p img {
+    width: 1.7857142857rem;
+  }
+  .intro__decor {
+    position: absolute;
+    width: 3.8571428571rem;
+    left: 33%;
+    bottom: -12%;
+  }
+  .intro__description {
+    width: 38%;
+    margin: 2.2857142857rem auto 0;
+  }
+  .intro__button {
+    margin: 2.2857142857rem auto 7.1428571429rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .intro h1 {
+    margin-top: 9.0714285714rem;
+  }
+  .intro__slogan {
+    position: relative;
+    width: 75%;
+    margin: auto;
+  }
+  .intro__slogan span,
+.intro__slogan p {
+    font-size: 2.1428571429rem;
+  }
+  .intro__slogan span img,
+.intro__slogan p img {
+    width: 1.3571428571rem;
+  }
+  .intro__decor {
+    position: absolute;
+    width: 3.5714285714rem;
+    left: 19%;
+    bottom: -12%;
+  }
+  .intro__description {
+    width: 59%;
+    margin: 1.9285714286rem auto 0;
+  }
+  .intro__button {
+    margin: 3.8571428571rem auto 9.7142857143rem;
   }
 }
 
