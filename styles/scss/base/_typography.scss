@@ -99,10 +99,16 @@ h2 {
   }
   @include media-min-and-max("tabletsPortrait", "smallDesktop") {
     font-size: px-to-rems(30, "mobiles");
+    & img {
+      width: px-to-rems(19, "mobiles");
+    }
   }
   @include media-max("tabletsPortrait") {
     font-size: px-to-rems(24, "mobiles");
     line-height: px-to-rems(35, "mobiles");
+    & img {
+      width: px-to-rems(15, "mobiles");
+    }
   }
 }
 
@@ -174,7 +180,16 @@ section {
 
 .button {
   border-radius: 4px;
+  
+  @include media-min("smallDesktop") {
   padding: px-to-rems(19, "bigDesktop") 5%;
+  }
+  @include media-min-and-max("tabletsPortrait", "smallDesktop") {
+    padding: px-to-rems(19, "mobiles") 5%;
+  }
+  @include media-max("tabletsPortrait") {
+    padding: px-to-rems(15, "mobiles") 5%;
+  }
   &--black {
     color: white;
     background-color: $black;
@@ -185,4 +200,7 @@ section {
 .text-figure,
 .text {
   text-align: center;
+  @include media-max("tabletsPortrait") {
+font-size: 12px;
+  }
 }

@@ -27,167 +27,290 @@
       left: 33%;
       bottom: -12%;
     }
-    &__description{
-
-        width: 33%;
-        margin:px-to-rems(32, "bigDesktop") auto;
+    &__description {
+      width: 33%;
+      margin: px-to-rems(32, "bigDesktop") auto;
     }
-    &__button{
-        margin: px-to-rems(46, "bigDesktop") auto px-to-rems(131, "bigDesktop");
+    &__button {
+      margin: px-to-rems(46, "bigDesktop") auto px-to-rems(131, "bigDesktop");
     }
   }
-
-
 
   @include media-min-and-max("tabletsPortrait", "smallDesktop") {
     & h1 {
-        margin-top: px-to-rems(100, "mobiles");
-      }
-      &__slogan {
-        position: relative;  
-        width: 75%;
-        margin: auto;
-        & span,
-        p {
-          font-size: px-to-rems(40, "mobiles");
-  
-          & img {
-            width: px-to-rems(25, "mobiles");
-          }
+      margin-top: px-to-rems(100, "mobiles");
+    }
+    &__slogan {
+      position: relative;
+      width: 75%;
+      margin: auto;
+      & span,
+      p {
+        font-size: px-to-rems(40, "mobiles");
+
+        & img {
+          width: px-to-rems(25, "mobiles");
         }
       }
-      &__decor {
-        position: absolute;
-        width: px-to-rems(54, "mobiles");
-        left: 33%;
-        bottom: -12%;
-      }
-      &__description{
-            width: 38%;
-          margin: px-to-rems(32, "mobiles") auto 0;
-      }
-      &__button{
-          margin:px-to-rems(32, "mobiles") auto px-to-rems(100, "mobiles");
-      }
+    }
+    &__decor {
+      position: absolute;
+      width: px-to-rems(54, "mobiles");
+      left: 33%;
+      bottom: -12%;
+    }
+    &__description {
+      width: 38%;
+      margin: px-to-rems(32, "mobiles") auto 0;
+    }
+    &__button {
+      margin: px-to-rems(32, "mobiles") auto px-to-rems(100, "mobiles");
+    }
   }
-
 
   @include media-max("tabletsPortrait") {
     & h1 {
-        margin-top: px-to-rems(127, "mobiles");
-      }
-      &__slogan {
-        position: relative;  
-        width: 75%;
-        margin: auto;
-        & span,
-        p {
-          font-size: px-to-rems(30, "mobiles");
-  
-          & img {
-            width: px-to-rems(19, "mobiles");
-          }
+      margin-top: px-to-rems(127, "mobiles");
+    }
+    &__slogan {
+      position: relative;
+      width: 75%;
+      margin: auto;
+      & span,
+      p {
+        font-size: px-to-rems(30, "mobiles");
+
+        & img {
+          width: px-to-rems(19, "mobiles");
         }
       }
-      &__decor {
-        position: absolute;
-        width: px-to-rems(50, "mobiles");
-        left: 19%;
-        bottom: -12%;
-      }
-      &__description{
-            width: 59%;
-          margin: px-to-rems(27, "mobiles") auto 0;
-      }
-      &__button{
-          margin:px-to-rems(54, "mobiles") auto px-to-rems(136, "mobiles");
-      }
+    }
+    &__decor {
+      position: absolute;
+      width: px-to-rems(50, "mobiles");
+      left: 19%;
+      bottom: -12%;
+    }
+    &__description {
+      width: 59%;
+      margin: px-to-rems(27, "mobiles") auto 0;
+    }
+    &__button {
+      margin: px-to-rems(54, "mobiles") auto px-to-rems(136, "mobiles");
+    }
   }
 }
 
+.studio-presentation {
+  @include media-min("smallDesktop") {
+    &__poster {
+      margin: px-to-rems(47, "bigDesktop") -2rem px-to-rems(168, "bigDesktop") 6.8%;
+      display: flex;
+      flex-direction: column;
+      & .button {
+        align-self: flex-end;
+        margin-top: px-to-rems(32, "bigDesktop");
+      }
+    }
+    &__realisations {
+      margin-top: px-to-rems(53, "bigDesktop");
+    }
+    &__line {
+      display: flex;
+      margin-right: -6.8%;
+      justify-content: space-between;
+    }
+    &__item {
+      flex: 0 0 32%;
+      & figure {
+        @include cover(374, "bigDesktop");
+      }
+      & h4 {
+        margin-top: 1rem;
+      }
+    }
+    &__more {
+      margin-top: px-to-rems(30, "bigDesktop");
+      display: flex;
+      justify-content: flex-end;
+      & a {
+        display: flex;
+        & span {
+          border-bottom: solid 1px black;
+        }
+        & img {
+          width: px-to-rems(25, "bigDesktop");
+          margin-left: px-to-rems(18, "bigDesktop");
+        }
+      }
+    }
+  }
 
-.studio-presentation{
+  @include media-min-and-max("tabletsPortrait", "smallDesktop") {
+    &__poster {
+      margin: px-to-rems(47, "mobiles") -2rem px-to-rems(168, "mobiles") px-to-rems(20, "mobiles");
+      display: flex;
+      flex-direction: column;
+      & .button {
+        align-self: flex-end;
+        margin-top: px-to-rems(59, "mobiles");
+      }
+    }
+    &__realisations {
+      margin-top: px-to-rems(40, "mobiles");
+    }
+    &__line {
+      display: flex;
+      // margin-right: -6.8%;
+      justify-content: space-between;
+    }
+    &__item {
+      flex: 0 0 32%;
+      & figure {
+        @include cover(205, "mobiles");
+      }
+      & h4 {
+        margin-top: 1rem;
+      }
+    }
+    &__more {
+      margin-top: px-to-rems(26, "mobiles");
+      display: flex;
+      justify-content: flex-end;
+      & a {
+        display: flex;
+        & span {
+          border-bottom: solid 1px black;
+        }
+        & img {
+          width: px-to-rems(26, "mobiles");
+          margin-left: px-to-rems(18, "mobiles");
+        }
+      }
+    }
+  }
+
+  @include media-max("tabletsPortrait") {
+    padding-right: unset;
+    & h2 {
+      margin-top: px-to-rems(32, "mobiles");
+    }
+    &__poster {
+      margin: px-to-rems(22, "mobiles") 0 px-to-rems(86, "mobiles");
+      display: flex;
+      flex-direction: column;
+      & .button {
+        align-self: flex-end;
+        margin-top: px-to-rems(99, "mobiles");
+      }
+    }
+    &__realisations {
+      margin-top: px-to-rems(53, "mobiles");
+    }
+    &__line {
+      display: flex;
+      justify-content: space-between;
+      @include scroller;
+    }
+    &__item {
+      flex: 0 0 73%;
+      margin-right: 1.5rem;
+      & figure {
+        @include cover(163, "mobiles");
+      }
+      & h4 {
+        margin-top: 1rem;
+      }
+    }
+    &__more {
+      margin-top: px-to-rems(30, "mobiles");
+      display: flex;
+      justify-content: flex-end;
+      & a {
+        display: flex;
+        & span {
+          border-bottom: solid 1px black;
+        }
+        & img {
+          width: px-to-rems(25, "mobiles");
+          margin-left: px-to-rems(18, "mobiles");
+        }
+      }
+    }
+  }
+}
+
+.personal-presentation {
+  background-color: $beige;
 
   @include media-min("smallDesktop") {
-  &__poster{
-    margin: px-to-rems(47, "bigDesktop") -2REM px-to-rems(168, "bigDesktop") 6.8%;
-    display: flex;
-    flex-direction: column;
-    & .button{
-      align-self: flex-end;
-      margin-top: px-to-rems(32, "bigDesktop");
-    }
-  }
-  &__realisations{
-    margin-top: px-to-rems(53, "bigDesktop");
-  }
-  &__line{
-    display: flex;
-    margin-right: -6.8%;
-    justify-content: space-between;
-  }
-  &__item{
-    flex: 0 0 32%;
-    & figure{
-      @include cover(374, "bigDesktop");
-    }
-  }
-  &__more{
-    margin-top: px-to-rems(30, "bigDesktop");
-    display: flex;
-    justify-content: flex-end;
-    & a{
+    &__container {
       display: flex;
-      & span{
-      border-bottom: solid 1px black;
+      justify-content: space-between;
     }
-      & img{
-        width: px-to-rems(25, "bigDesktop");
-        margin-left: px-to-rems(18, "bigDesktop");
+    &__image {
+      width: px-to-rems(536, "bigDesktop");
+      margin-right: 5%;
+        @include cover(605, "bigDesktop");
+      
+    }
+    &__text {
+      margin: px-to-rems(155, "bigDesktop") 0% 0 5%;
+      & h2 {
+        margin-bottom: px-to-rems(20, "bigDesktop");
+        &+p {
+          margin-bottom: px-to-rems(96, "bigDesktop");
+          padding-right: 32%;
+        }
       }
     }
   }
-}
 
 
-@include media-min-and-max("tabletsPortrait", "smallDesktop") {
-  &__poster{
-    margin: px-to-rems(47, "mobiles") -2rem px-to-rems(168, "mobiles") px-to-rems(20, "mobiles");
-    display: flex;
-    flex-direction: column;
-    & .button{
-      align-self: flex-end;
-      margin-top: px-to-rems(59, "mobiles");
-    }
-  }
-  &__realisations{
-    margin-top: px-to-rems(40, "mobiles");
-  }
-  &__line{
-    display: flex;
-    // margin-right: -6.8%; 
-    justify-content: space-between;
-  }
-  &__item{
-    flex: 0 0 32%;
-    & figure{
-      @include cover(205, "mobiles");
-    }
-  }
-  &__more{
-    margin-top: px-to-rems(26, "mobiles");
-    display: flex;
-    justify-content: flex-end;
-    & a{
+  @include media-min-and-max("tabletsPortrait", "smallDesktop") {
+    &__container {
       display: flex;
-      & span{
-      border-bottom: solid 1px black;
+      justify-content: space-between;
     }
-      & img{
-        width: px-to-rems(26, "mobiles");
-        margin-left: px-to-rems(18, "mobiles");
+    &__image {
+      width: px-to-rems(257, "mobiles");
+      margin-right: 5%;
+        @include cover(347, "mobiles");
+ 
+    }
+    &__text {
+      margin: px-to-rems(155, "bigDesktop") 0% 0 5%;
+      & h2 {
+        margin-bottom: px-to-rems(20, "bigDesktop");
+        &+p {
+          margin-bottom: px-to-rems(96, "bigDesktop");
+          padding-right: 32%;
+        }
       }
     }
   }
-}
+  @include media-max("tabletsPortrait") {
+    
+    margin-top: px-to-rems(27, "mobiles");
+    &__image {
+      width: px-to-rems(183, "mobiles");
+      margin: auto ;
+        @include cover(208, "mobiles");
+ 
+    }
+    &__text {
+      margin: px-to-rems(35, "mobiles") auto 0;
+      text-align: center;
+      & h2 {
+        margin-bottom: px-to-rems(20, "bigDesktop");
+        &+p {
+          margin: px-to-rems(11, "mobiles") auto px-to-rems(17, "mobiles");
+          width: 75%;
+        }
+      }
+      & .button{
+        margin-bottom: px-to-rems(51, "mobiles");
+      }
+    }
+  }
 }
