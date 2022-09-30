@@ -1487,4 +1487,14 @@ strong {
   }
 }
 
+.work-together {
+  text-align: center;
+}
+.work-together h2 {
+  margin-bottom: 2rem;
+}
+.work-together p {
+  margin-bottom: 4rem;
+}
+
 /*# sourceMappingURL=style.css.map */
