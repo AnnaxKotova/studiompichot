@@ -113,16 +113,17 @@ h2 {
 }
 
 h3 {
+  font-weight: 600;
   @include media-min("smallDesktop") {
-    font-size: px-to-rems(30, "bigDesktop");
+    font-size: px-to-rems(24, "bigDesktop");
     line-height: px-to-rems(46, "bigDesktop");
   }
   @include media-min-and-max("tabletsPortrait", "smallDesktop") {
-    font-size: px-to-rems(24, "mobiles");
+    font-size: px-to-rems(16, "mobiles");
     line-height: px-to-rems(35, "mobiles");
   }
   @include media-max("tabletsPortrait") {
-    font-size: px-to-rems(24, "mobiles");
+    font-size: px-to-rems(16, "mobiles");
     line-height: px-to-rems(35, "mobiles");
   }
 }
@@ -167,8 +168,8 @@ strong {
 
 section {
   @include media-min("smallDesktop") {
-    padding: px-to-rems(105, "bigDesktop") 14.2% px-to-rems(90, "bigDesktop")
-      7.1%;
+    padding: px-to-rems(105, "bigDesktop") 7.1% px-to-rems(90, "bigDesktop")
+       14.2%;
   }
   @include media-min-and-max("tabletsPortrait", "smallDesktop") {
     padding: four-px-to-rems(77, 80, 59, 80, "mobiles");
@@ -203,4 +204,10 @@ section {
   @include media-max("tabletsPortrait") {
 font-size: 12px;
   }
+}
+
+
+li{
+  list-style: url('../../../assets/images/flower--pink.svg');
+  padding-left: 1.5rem;
 }

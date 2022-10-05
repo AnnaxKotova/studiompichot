@@ -2,6 +2,7 @@ let menuBurger = document.getElementById("menu-burger");
 let closeMenu = document.getElementById("closeMenu");
 let navbar = document.getElementById("navbar");
 let header = document.getElementById("header");
+let homepage;
 
 import {
     toggleMenu,
@@ -38,8 +39,10 @@ currentLinks.forEach(function(link) {
     link.parentNode.classList.toggle('active');
 });
 
+if(homepage){
 
 changeColorInterval();
 
 window.onscroll = function() {    headerChange
     ()};
+}
