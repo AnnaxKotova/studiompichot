@@ -8,6 +8,8 @@ import { toggleMenu, changeColorInterval, headerChange } from "./functions.js";
 
 import {slideToggle} from "./slideToggle.js";
 
+import {generateProjects} from "./generateProjects.js"
+
 if (menuBurger) {
   menuBurger.addEventListener("click", toggleMenu);
   closeMenu.addEventListener("click", toggleMenu);
@@ -52,3 +54,25 @@ if (openersQuestions) {
     });
   });
 }
+
+
+
+fetch('../js/projects.json').then(res => res.json()).then(json => {
+  let tagName = "Tout";
+  generateProjects(json, tagName);
+
+
+  let tags = document.querySelectorAll(".realisations__tag");
+  tags.forEach(tag => {
+
+    tag.addEventListener('click', function(event) {
+      // tag.parentNode.childNodes.classList.remove("bold");
+      // {neighbour.classList.remove("bold")}
+      // tag.parentNode.children.forEach(a => console.log(a));
+
+    document.querySelector(".realisations__main").replaceChildren([]);
+    generateProjects(json, tag.textContent);
+    tag.classList.add("bold");
+});
+    });
+});

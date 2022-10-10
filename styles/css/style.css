@@ -2020,4 +2020,38 @@ li {
   }
 }
 
+@media screen and (min-width: 1280px) {
+  .realisations__container {
+    display: flex;
+    margin-top: 8.7777777778rem;
+  }
+  .realisations__sidebar {
+    flex: 0 0 18%;
+  }
+  .realisations__tag {
+    margin-bottom: 0.5rem;
+  }
+  .realisations__main {
+    flex: 0 0 72%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 2%;
+  }
+  .realisations__item {
+    flex: 0 0 32%;
+  }
+  .realisations__item figure {
+    height: 16.5555555556rem;
+    margin-bottom: 0.2777777778rem;
+  }
+  .realisations__item figure > img {
+    height: 100%;
+    object-fit: cover;
+  }
+  .realisations__title {
+    margin-bottom: 0.8333333333rem;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

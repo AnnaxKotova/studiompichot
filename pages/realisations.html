@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Studio Marie Pichot - home</title>
+    <link rel="stylesheet" href="../styles/css/style.css" />
+  </head>
+  <body>
+    <header id="header" class="header highlight--blue">
+      <figure class="header__logo element-desktop">
+        <img src="../assets/images/logo__black--center.svg" />
+      </figure>
+      <figure class="header__logo element-mobile">
+        <img src="../assets/images/logo__black--left.svg" />
+      </figure>
+      <menu class="header__menu">
+        <nav id="navbar" class="header__navbar">
+          <div class="header__navbar--container">
+            <figure id="closeMenu" class="header__close element-mobile">
+              <img src="../assets/images/close.svg" />
+            </figure>
+            <figure class="element-mobile header__logo--mobile">
+              <img src="../assets/images/logo__black--left.svg" />
+            </figure>
+            <p class="text-figure header__text-figure element-mobile">
+              Travaillons ensemble
+            </p>
+            <div class="header__items">
+              <a
+                class="element-mobile active"
+                href="http://127.0.0.1:5500/pages/home.html"
+                >Accueil</a
+              >
+              <a>Services</a>
+              <a class="header__active">Réalisations</a>
+              <a>A propos</a>
+              <a>Contact</a>
+            </div>
+            <div class="header__contacts element-mobile">
+              <a href="tel:06 32 05 92 60">
+                <img src="../assets/images/phone.svg" />
+                <span>06 32 05 92 60</span>
+              </a>
+
+              <a href="mailto:studio.mpichot@gmail.com">
+                <img src="../assets/images/email.svg" />
+                <span>studio.mpichot@gmail.com</span>
+              </a>
+            </div>
+            <div class="header__social-networks element-mobile">
+              <figure>
+                <a href="#">
+                  <img src="../assets/images/instagram--black.svg" />
+                </a>
+              </figure>
+              <figure>
+                <a href="#">
+                  <img src="../assets/images/behance--black.svg" alt=""
+                /></a>
+              </figure>
+              <figure>
+                <a href="#">
+                  <img src="../assets/images/linkedin--black.svg" alt=""
+                /></a>
+              </figure>
+            </div>
+          </div>
+        </nav>
+        <figure id="menu-burger" class="header__menu-burger element-mobile">
+          <img src="../assets/images/menu-burger.svg" />
+        </figure>
+      </menu>
+    </header>
+
+    <section class="realisations">
+      <h2>Réalisations</h2>
+      <div class="realisations__container">
+        <div class="realisations__sidebar element-desktop">
+          <p class="realisations__tag bold">Tout</p>
+          <p class="realisations__tag ">Identité visuelle</p>
+          <p class="realisations__tag">Webdesign</p>
+          <p class="realisations__tag">Réseaux sociaux</p>
+          <p class="realisations__tag">Photographie</p>
+          <p class="realisations__tag">Print</p>
+          <p class="realisations__tag">Illustration</p>
+        </div>
+        <div class="realisations__main">
+          
+
+        </div>
+      </div>
+    </section>
+
+    <section class="work-together centered-annonce">
+      <h2 class="quikens">
+        Travaill<img src="../assets/images/flower--black.svg" alt="" />ns
+        ensemble !
+      </h2>
+      <p>Discutons de votre projet par mail, téléphone ou autour d’un café !</p>
+      <a href="#" class="button button--black">Me contacter</a>
+    </section>
+
+    <template id="realisations__items">
+      <div class="realisations__item">
+        <figure>
+          <img src="../assets/PROJECTS/ARS/couverture.png" alt="" class="realisations__image"/>
+        </figure>
+        <h4 class="realisations__title">lOREM</h4>
+      </div>
+    </template>
+
+    <template id="realisations__presentation">
+      <div class="realisations__wall">
+        <div class="realisations__board">
+          <div class="realisations__back">retour</div>
+          <h2 class="realisations__name">LOREM</h2>
+          <p class="realisations__description">Dans le cadre d’un appel d’offre, le client Runnin’city nous a mis au défi de moderniser son site et application sans changer l’intégralité de leur charte graphique. J’ai été chargée de l’ensemble de la partie visuelle de ce projet. J’ai opté pour une identité sobre et élégante en ajoutant des touches de couleurs pour rappeler le côté sport.</p>
+          <img src="../assets/PROJECTS/LAPARITAINE/Laparitaine.png" alt="" class="realisations__poster">
+        </div>
+        <div class="realisations__other-projects">
+          <figure>
+            <img src="../assets/PROJECTS/ARS/couverture.png" alt="" class="realisations__other-image"/>
+          </figure>
+          <h4 class="realisations__other-title">lOREM</h4>
+        </div>
+        <section class="work-together centered-annonce">
+          <h2 class="quikens">
+            Travaill<img src="../assets/images/flower--black.svg" alt="" />ns
+            ensemble !
+          </h2>
+          <p>Discutons de votre projet par mail, téléphone ou autour d’un café !</p>
+          <a href="#" class="button button--black">Me contacter</a>
+        </section>
+      </div>
+    </template>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <figure class="footer__logo">
+          <img src="../assets/images/logo__white--center.svg" />
+        </figure>
+
+        <div class="footer__social-networks">
+          <p>Suivez moi sur les réseaux sociaux !</p>
+          <div class="footer__social-networks--container">
+            <figure>
+              <a href="#">
+                <img src="../assets/images/instagram--white.svg" />
+              </a>
+            </figure>
+            <figure>
+              <a href="#">
+                <img src="../assets/images/behance--white.svg" alt=""
+              /></a>
+            </figure>
+            <figure>
+              <a href="#">
+                <img src="../assets/images/linkedin--white.svg" alt=""
+              /></a>
+            </figure>
+          </div>
+        </div>
+
+        <menu class="footer__menu">
+          <a>Services</a>
+          <a>Réalisations</a>
+          <a>A propos</a>
+        </menu>
+
+        <div class="footer__contacts">
+          <p class="bold">Contacts</p>
+          <a href="mailto:studio.mpichot@gmail.com">studio.mpichot@gmail.com</a>
+          <a href="tel:06 32 05 92 60">06 32 05 92 60</a>
+        </div>
+      </div>
+
+      <a class="footer__legal-mentions">Mentions légales</a>
+    </footer>
+
+    <script type="module" src="../js/script.js"></script>
+  </body>
+</html>
