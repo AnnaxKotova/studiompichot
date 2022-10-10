@@ -405,6 +405,7 @@ menu {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   line-height: 1.5;
+  color: #030007;
 }
 
 .quikens {
@@ -460,6 +461,7 @@ menu {
 
 img {
   width: 100%;
+  vertical-align: middle;
 }
 
 h1 {
@@ -633,6 +635,16 @@ strong {
 li {
   list-style: url("../../../assets/images/flower--pink.svg");
   padding-left: 1.5rem;
+}
+
+.centered-annonce {
+  text-align: center;
+}
+.centered-annonce h2 {
+  margin-bottom: 2rem;
+}
+.centered-annonce p {
+  margin-bottom: 4rem;
 }
 
 .header {
@@ -1629,16 +1641,6 @@ li {
   }
 }
 
-.work-together {
-  text-align: center;
-}
-.work-together h2 {
-  margin-bottom: 2rem;
-}
-.work-together p {
-  margin-bottom: 4rem;
-}
-
 .offers__container {
   display: flex;
   flex-wrap: wrap;
@@ -1786,6 +1788,49 @@ li {
   }
   .collaboration__item {
     margin-bottom: 1rem;
+  }
+}
+
+.faq__question.opened figure {
+  transform: rotate(180deg);
+  transition: transform 500ms ease-in-out;
+}
+.faq__question figure {
+  transform: rotate(0deg);
+  transition: transform 500ms ease-in-out;
+}
+.faq__answer {
+  display: none;
+  background-color: #F5F5F5;
+}
+.faq__answer p {
+  color: #707070;
+}
+.faq__open-question {
+  display: flex;
+  justify-content: space-between;
+  background-color: #030007;
+}
+.faq__open-question span {
+  color: white;
+  font-weight: 600;
+}
+@media screen and (min-width: 1280px) {
+  .faq h2 {
+    margin-bottom: 1.4285714286rem;
+  }
+  .faq > p {
+    width: 50%;
+    margin-bottom: 2.8571428571rem;
+  }
+  .faq__question {
+    margin-bottom: 1.9285714286rem;
+  }
+  .faq__open-question {
+    padding: 2.5rem 2.7857142857rem;
+  }
+  .faq__answer {
+    padding: 2.5rem 2.7857142857rem;
   }
 }
 

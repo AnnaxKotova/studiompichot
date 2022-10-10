@@ -162,3 +162,56 @@
         }
     }
 }
+
+
+
+.faq{
+  &__question{
+    &.opened figure{
+      transform: rotate(180deg);
+      transition: transform 500ms ease-in-out;
+    }
+    & figure{
+      transform: rotate(0deg);
+      transition: transform 500ms ease-in-out;
+    }
+  }
+  &__answer{
+    //hidden by default
+    display: none;
+    background-color: $beige;
+    & p{
+    color: $darkGray;
+  }
+  }
+  &__open-question{
+    display: flex;
+    justify-content: space-between;
+    background-color: $black;
+
+    & span{
+      color: white;
+      font-weight: 600;
+    }
+  }
+    @include media-min("smallDesktop") {
+      & h2{
+        margin-bottom: px-to-rems(20, "mobiles");
+      }
+      & > p{
+        width: 50%;
+        margin-bottom: px-to-rems(40, "mobiles");
+      }
+      &__question{
+        margin-bottom: px-to-rems(27, "mobiles");
+      }
+      &__open-question{
+      padding: px-to-rems(35, "mobiles") px-to-rems(39, "mobiles");
+
+      }
+      &__answer{
+        padding: px-to-rems(35, "mobiles") px-to-rems(39, "mobiles");
+      }
+    }
+
+}

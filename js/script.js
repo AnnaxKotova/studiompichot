@@ -4,45 +4,51 @@ let navbar = document.getElementById("navbar");
 let header = document.getElementById("header");
 let homepage;
 
-import {
-    toggleMenu,
-    changeColorInterval,
-    headerChange
-} from './functions.js';
+import { toggleMenu, changeColorInterval, headerChange } from "./functions.js";
 
+import {slideToggle} from "./slideToggle.js";
 
+if (menuBurger) {
+  menuBurger.addEventListener("click", toggleMenu);
+  closeMenu.addEventListener("click", toggleMenu);
 
-if(menuBurger){
-menuBurger.addEventListener("click", toggleMenu);
-closeMenu.addEventListener("click", toggleMenu);
-
-
-    let sections = document.querySelectorAll("section");
-    sections.forEach(section => {
-        section.addEventListener('click', function (event) {
-
-            if (navbar.classList.contains("navbar-show")) {
-                let isClickInsideElement = navbar.contains(event.target);
-                if ((!isClickInsideElement)) {
-                    //Do something click is outside specified element
-                    toggleMenu();
-                }
-            }
-        });
+  let sections = document.querySelectorAll("section");
+  sections.forEach((section) => {
+    section.addEventListener("click", function (event) {
+      if (navbar.classList.contains("navbar-show")) {
+        let isClickInsideElement = navbar.contains(event.target);
+        if (!isClickInsideElement) {
+          //Do something click is outside specified element
+          toggleMenu();
+        }
+      }
     });
-
+  });
 }
 
-
-let currentLinks = navbar.querySelectorAll('a[href="'+document.URL+'"]');
-currentLinks.forEach(function(link) {
-    link.parentNode.classList.toggle('active');
+let currentLinks = navbar.querySelectorAll('a[href="' + document.URL + '"]');
+currentLinks.forEach(function (link) {
+  link.parentNode.classList.toggle("active");
 });
 
-if(homepage){
+if (homepage) {
+  changeColorInterval();
 
-changeColorInterval();
+  window.onscroll = function () {
+    headerChange();
+  };
+}
 
-window.onscroll = function() {    headerChange
-    ()};
+let openersQuestions = Array.from(
+  document.getElementsByClassName("faq__open-question"));
+
+if (openersQuestions) {
+  openersQuestions.forEach((openerQuestion) => {
+    openerQuestion.addEventListener("click", function toggleQuestion(event) {
+      // when the function is anonyme, this is undefined...
+      //class "opened" serves for arrow rotation 
+      this.parentNode.classList.toggle("opened");
+      slideToggle(this.nextElementSibling, 500);
+    });
+  });
 }

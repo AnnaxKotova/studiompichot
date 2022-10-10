@@ -15,6 +15,7 @@
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   line-height: 1.5;
+  color: $black;
 }
 
 .quikens {
@@ -72,6 +73,7 @@ html {
 
 img {
   width: 100%;
+  vertical-align: middle;
 }
 
 h1 {
@@ -210,4 +212,16 @@ font-size: 12px;
 li{
   list-style: url('../../../assets/images/flower--pink.svg');
   padding-left: 1.5rem;
+}
+
+
+.centered-annonce{
+  text-align: center;
+  & h2{
+    margin-bottom: 2rem;
+  }
+  & p{
+    margin-bottom: 4rem;
+  }
+
 }
