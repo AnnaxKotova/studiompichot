@@ -179,6 +179,9 @@ section {
   @include media-max("tabletsPortrait") {
     padding: four-px-to-rems(52, 36, 2, 36, "mobiles");
   }
+  &:last-of-type{
+    margin-bottom: 8rem;
+  }
 }
 
 .button {

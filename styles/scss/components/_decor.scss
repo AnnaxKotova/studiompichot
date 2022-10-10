@@ -271,3 +271,53 @@
         }
       }
 }
+
+
+.services-carte{
+  @include media-min("smallDesktop") {
+    .text {
+      width: px-to-rems(122, "bigDesktop");
+      transform: matrix(1, -0.09, 0.09, 1, 0, 0);
+      bottom: 4%;
+      right: 10%;
+
+    }
+    .arrow{
+      width: px-to-rems(122, "bigDesktop");
+      bottom: 14%;
+      right: 19%;
+      transform: rotate(-124deg) scaleY(-1);
+    }
+  }
+  @include media-min-and-max("tabletsPortrait", "smallDesktop") {
+    .text {
+      width: px-to-rems(122, "mobiles");
+      transform: matrix(1, -0.09, 0.09, 1, 0, 0);
+      bottom: 4%;
+      right: 10%;
+
+    }
+    .arrow{
+      width: px-to-rems(122, "mobiles");
+      bottom: 14%;
+      right: 19%;
+      transform: rotate(-124deg) scaleY(-1);
+    }
+  }
+
+  @include media-max("tabletsPortrait") {
+    .text {
+      width: px-to-rems(122, "mobiles");
+      transform: matrix(1, -0.09, 0.09, 1, 0, 0);
+      bottom: 4%;
+      right: 10%;
+
+    }
+    .arrow{
+      width: px-to-rems(122, "mobiles");
+      bottom: 14%;
+      right: 19%;
+      transform: rotate(-124deg) scaleY(-1);
+    }
+  }
+}
