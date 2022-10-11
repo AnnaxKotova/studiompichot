@@ -8,7 +8,22 @@ import { toggleMenu, changeColorInterval, headerChange } from "./functions.js";
 
 import { slideToggle } from "./slideToggle.js";
 
-import { generateProjects } from "./generateProjects.js";
+import { generateProjects, generatePoster } from "./generateProjects.js";
+
+const getProjectForPoster = (json) => setTimeout(function () {
+  let allProjectsButtons = document.querySelectorAll(".realisations__item");
+
+  allProjectsButtons.forEach(button => {
+    
+    button.addEventListener("click", function (event) {
+      let projectName = button.querySelector(".realisations__title").textContent;
+      generatePoster(json, projectName);
+
+    });
+  })
+  //we have to wain until all the images download
+}, 1000);
+
 
 if (menuBurger) {
   menuBurger.addEventListener("click", toggleMenu);
@@ -67,6 +82,12 @@ fetch("../js/projects.json")
       tag.addEventListener("click", function (event) {
         document.querySelector(".realisations__main").replaceChildren([]);
         generateProjects(json, tag.textContent);
+        getProjectForPoster(json);
       });
+      getProjectForPoster(json);
     });
-  });
+
+
+    
+
+});

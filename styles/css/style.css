@@ -547,7 +547,7 @@ h4 {
 }
 @media screen and (min-width: 769px) and (max-width: 1280px) {
   h4 {
-    font-size: 1.1428571429rem;
+    font-size: 1rem;
   }
 }
 @media screen and (max-width: 768px) {
@@ -2051,6 +2051,127 @@ li {
   }
   .realisations__title {
     margin-bottom: 0.8333333333rem;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1280px) {
+  .realisations__container {
+    display: flex;
+    margin-top: 3.3571428571rem;
+  }
+  .realisations__sidebar {
+    flex: 0 0 25.5%;
+  }
+  .realisations__tag {
+    margin-bottom: 1.3571428571rem;
+  }
+  .realisations__main {
+    flex: 0 0 74.5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 1%;
+  }
+  .realisations__item {
+    flex: 0 0 32%;
+  }
+  .realisations__item figure {
+    height: 11.0714285714rem;
+    margin-bottom: 0.7142857143rem;
+  }
+  .realisations__item figure > img {
+    height: 100%;
+    object-fit: cover;
+  }
+  .realisations__title {
+    margin-bottom: 1.0714285714rem;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .realisations__background {
+    position: absolute;
+    top: 0;
+    z-index: 99999;
+    background-color: gray;
+    padding: 12.1111111111rem 17.2% 6.4444444444rem;
+  }
+  .realisations__board {
+    background-color: white;
+    padding-top: 2.7222222222rem;
+  }
+  .realisations__back {
+    display: flex;
+    margin: 0 2.8888888889rem;
+  }
+  .realisations__back img {
+    width: 1.5rem;
+    margin-right: 0.25rem;
+  }
+  .realisations__name {
+    margin: 1rem 2.8888888889rem 0;
+  }
+  .realisations__description {
+    margin: 2rem 2.8888888889rem 0;
+  }
+  .realisations__poster {
+    padding: 3.1666666667rem 0.8888888889rem 3.3888888889rem;
+  }
+  .realisations__other-projects {
+    padding: 2.3333333333rem 4.7777777778rem 3.4444444444rem;
+    display: flex;
+    gap: 1.1111111111rem;
+    background-color: #F5F5F5;
+  }
+  .realisations__other-title {
+    margin-top: 0.5555555556rem;
+  }
+  .realisations__wall .work-together {
+    background-color: white;
+    padding: 3.1111111111rem 0 7.7222222222rem;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1280px) {
+  .realisations__background {
+    position: absolute;
+    top: 0;
+    z-index: 99999;
+    background-color: gray;
+    padding: 8.3333333333rem 17.2% 6.4444444444rem;
+  }
+  .realisations__board {
+    background-color: white;
+    padding-top: 2.7222222222rem;
+  }
+  .realisations__back {
+    display: flex;
+    margin: 0 2.8888888889rem;
+  }
+  .realisations__back img {
+    width: 1.5rem;
+    margin-right: 0.25rem;
+  }
+  .realisations__name {
+    margin: 1rem 2.8888888889rem 0;
+  }
+  .realisations__description {
+    margin: 2rem 2.8888888889rem 0;
+  }
+  .realisations__poster {
+    box-sizing: border-box;
+    padding: 3.1666666667rem 0.8888888889rem 3.3888888889rem;
+  }
+  .realisations__other-projects {
+    padding: 2.3333333333rem 4.7777777778rem 3.4444444444rem;
+    display: flex;
+    gap: 1.1111111111rem;
+    background-color: #F5F5F5;
+  }
+  .realisations__other-title {
+    margin-top: 0.5555555556rem;
+  }
+  .realisations__wall .work-together {
+    background-color: white;
+    padding: 5.1428571429rem 0 7.7222222222rem;
   }
 }
 

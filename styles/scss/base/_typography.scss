@@ -138,7 +138,7 @@ h4 {
   }
 
   @include media-min-and-max("tabletsPortrait", "smallDesktop") {
-    font-size: px-to-rems(16, "mobiles");
+    font-size: px-to-rems(14, "mobiles");
   }
 
   @include media-max("tabletsPortrait") {

@@ -11,13 +11,15 @@
     "thumbnail" : "../assets/PROJECTS/ARS/couverture.png",
     "title": "LAPARITAINE",
     "tags": ["Réseaux sociaux", "Photographie"],
-    "poster": "../assets/PROJECTS/LAPARITAINE/Laparitaine.png"
+    "poster": "../assets/PROJECTS/LAPARITAINE/Laparitaine.png",
+    "description": "Shooting photo, post production et création de moodboard pour mettre en avant les bijoux du client Laparitaine. Les photos étaient destinées principalement aux réseaux sociaux du client, j’ai donc fait le choix de rendre les photos dans un format post et story. "
   },  {
     "id": 3,
     "thumbnail" : "../assets/PROJECTS/ARS/couverture.png",
     "title": "MINESIO",
     "tags": ["Webdesign", "Réseaux sociaux", "Illustration"],
-    "poster": "../assets/PROJECTS/LAPARITAINE/Laparitaine.png"
+    "poster": "../assets/PROJECTS/LAPARITAINE/Laparitaine.png",
+    "description": "Le client Globassur voulait une nouvelle identité visuelle, plus moderne et plus en accord avec ses nouvelles valeurs. Il a fallu dans un premier temps changer de nom et créer un logo. Pour répondre à la volonté du client d’avoir une image plus rassurante, je suis partie sur la création d’illustration et pictogramme avec le vert en couleur principale. L’identité visuelle à été déclinée sur le site web, les réseaux sociaux, les cartes de visites et les goodies de l’entreprise. "
   }, {
     "id": 4,
     "thumbnail" : "../assets/PROJECTS/INDIANA/couverture.png",
