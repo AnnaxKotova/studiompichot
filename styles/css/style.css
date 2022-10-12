@@ -20,7 +20,7 @@
 .highlight--green {
   background-color: #008A6F;
 }
-.highlight--green h1,
+.highlight--green h1, .highlight--green h2,
 .highlight--green p,
 .highlight--green span {
   color: #E0C6EE;
@@ -38,7 +38,7 @@
 .highlight--lightBlue {
   background-color: #AECBF0;
 }
-.highlight--lightBlue h1,
+.highlight--lightBlue h1, .highlight--lightBlue h2,
 .highlight--lightBlue p,
 .highlight--lightBlue span {
   color: #0B5ABD;
@@ -60,7 +60,7 @@
   color: #030007;
 }
 .highlight--white img {
-  filter: unset;
+  filter: unset !important;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
