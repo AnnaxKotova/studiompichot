@@ -2,25 +2,31 @@ export const toggleMenu = () =>{
     navbar.classList.toggle("navbar-show");
 }
 
-
+// intro, header
 let colors = ['green', 'blue', 'lightBlue'];
 let cnt = 0;
-const changeColor = () =>{
 
-        document.querySelector(".intro").classList.remove(`highlight--${colors[cnt]}`);
-        document.querySelector(".header").classList.remove(`highlight--${colors[cnt]}`);
+
+
+const changeColor = (elementToHighlight) =>{
+
+    elementToHighlight.classList.remove(`highlight--${colors[cnt]}`);
+    header.classList.remove(`highlight--${colors[cnt]}`);
         cnt++;
         if (cnt > 2) cnt = 0;
-        document.querySelector(".intro").classList.add(`highlight--${colors[cnt]}`);
-        document.querySelector(".header").classList.add(`highlight--${colors[cnt]}`);
+        elementToHighlight.classList.add(`highlight--${colors[cnt]}`);
+        header.classList.add(`highlight--${colors[cnt]}`);
     
 }
 
-export const changeColorInterval = () =>{
-    setInterval(changeColor, 1000);
+export const changeColorInterval = (elementToHighlight) =>{
+    //need to create an anonymous function so the actual function isn't executed right away.
+    setInterval( function() { changeColor(elementToHighlight); }, 1000 );
 }
 
 
 export const headerChange = () =>{
+    if (window.scrollY) {
     header.classList.add('highlight--white'); 
+    } else     header.classList.remove('highlight--white'); 
   }

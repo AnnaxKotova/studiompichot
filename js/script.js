@@ -3,6 +3,8 @@ let closeMenu = document.getElementById("closeMenu");
 let navbar = document.getElementById("navbar");
 let header = document.getElementById("header");
 let homepage;
+let intro = document.querySelector(".intro");
+let personalPresentation = document.querySelector(".personal-presentation__about");
 
 import { toggleMenu, changeColorInterval, headerChange } from "./functions.js";
 
@@ -47,17 +49,35 @@ currentLinks.forEach(function (link) {
   link.parentNode.classList.toggle("active");
 });
 
-if (homepage) {
-  changeColorInterval();
 
+//pages
+
+let homePage = (document.URL.split("/").includes("home.html"));
+let aboutMe = (document.URL.split("/").includes("about-me.html"));
+let realisations = (document.URL.split("/").includes("realisations.html"));
+let openersQuestions = Array.from(
+  document.getElementsByClassName("faq__open-question")
+);
+
+console.log(realisations);
+
+
+
+if(homePage){
+  changeColorInterval(intro);
   window.onscroll = function () {
     headerChange();
   };
 }
 
-let openersQuestions = Array.from(
-  document.getElementsByClassName("faq__open-question")
-);
+if(aboutMe){
+  changeColorInterval(personalPresentation);
+  window.onscroll = function () {
+    headerChange();
+  };
+}
+
+
 
 if (openersQuestions) {
   openersQuestions.forEach((openerQuestion) => {
@@ -70,6 +90,7 @@ if (openersQuestions) {
   });
 }
 
+if(realisations){
 fetch("../js/projects.json")
   .then((res) => res.json())
   .then((json) => {
@@ -90,3 +111,4 @@ fetch("../js/projects.json")
     
 
 });
+}

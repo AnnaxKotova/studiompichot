@@ -1,7 +1,7 @@
 .highlight {
   &--blue {
     background-color: $blue;
-    & h1,
+    & h1, h2,
     p,
     span {
       color: $pink;
@@ -9,7 +9,7 @@
     &.header a{       
         color: $pink;       
     }
-    & img{
+    &  p:after,  img:not(.no-highlight)  {
         filter: $black-to-pink;
     }
     & .button{
@@ -20,7 +20,7 @@
   }
   &--green {
     background-color: $green;
-    & h1,
+    & h1, h2,
     p,
     span {
       color: $lightPink;
@@ -28,7 +28,7 @@
     &.header a{       
         color: $lightPink;       
     }
-    & img{
+    &  p:after,  img:not(.no-highlight)  {
         filter: $black-to-lightPink;
     }
     & .button{
@@ -38,7 +38,7 @@
   }
   &--lightBlue {
     background-color: $lightBlue ;
-    & h1,
+    & h1, h2,
     p,
     span {
       color: $blue;
@@ -46,7 +46,7 @@
     &.header a{       
         color: $blue;       
     }
-    & img{
+    &  p:after,  img:not(.no-highlight)  {
         filter: $black-to-blue;
     }
     & .button{
@@ -54,13 +54,14 @@
         color: $lightBlue ;
     }
   }
+  //for header shutdown
   &--white {
     background-color: white;
     &.header a{       
         color: $black;       
     }
     & img{
-        filter: unset;
+        filter: unset !important;
     }
   }
 }

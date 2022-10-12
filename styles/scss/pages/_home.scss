@@ -103,6 +103,8 @@
 
 .studio-presentation {
   @include media-min("smallDesktop") {
+              padding: px-to-rems(105, "bigDesktop") 7.1% px-to-rems(90, "bigDesktop")
+       14.2%;
     &__poster {
       margin: px-to-rems(47, "bigDesktop") -2rem px-to-rems(168, "bigDesktop") 6.8%;
       display: flex;
@@ -113,6 +115,7 @@
       }
     }
     &__realisations {
+
       margin-top: px-to-rems(53, "bigDesktop");
     }
     &__line {
@@ -241,8 +244,9 @@
 }
 
 .personal-presentation {
+  &__main{
   background-color: $beige;
-
+}
   @include media-min("smallDesktop") {
     &__container {
       display: flex;
@@ -290,8 +294,8 @@
     }
   }
   @include media-max("tabletsPortrait") {
-    
-    margin-top: px-to-rems(27, "mobiles");
+    &:not(:first-of-type){
+    margin-top: px-to-rems(27, "mobiles");}
     &__image {
       width: px-to-rems(183, "mobiles");
       margin: auto ;

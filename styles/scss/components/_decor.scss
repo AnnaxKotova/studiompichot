@@ -406,3 +406,123 @@
   }
 
 }
+
+
+.work-vision{
+
+  @include media-min("smallDesktop") {
+    .text-figure {
+      width: px-to-rems(101, "bigDesktop");
+      transform: matrix(0.97, 0.24, -0.24, 0.97, 0, 0);
+      top: 17%;
+      right: 25%;
+      & p {
+        @include border-draw(160, 160, 61, -24, "bigDesktop");
+      }
+    }
+
+
+  }
+
+  @include media-min-and-max("tabletsPortrait", "smallDesktop") {
+    .text-figure {
+      width: px-to-rems(78, "mobiles");
+      transform: matrix(0.97, 0.24, -0.24, 0.97, 0, 0);
+      top: 17%;
+      right: 25%;
+      & p {
+        @include border-draw(109, 160, 63, -20, "mobiles");
+      }
+    }
+  }
+
+  @include media-max("tabletsPortrait") {
+    .text-figure {
+      width: px-to-rems(108, "mobiles");
+      transform: matrix(0.97, 0.24, -0.24, 0.97, 0, 0);
+      top: 17%;
+      right: 25%;
+      & p {
+        @include border-draw(109, 160, 63, -6, "mobiles");
+      }
+    }
+  }
+}
+
+
+.insider{
+
+  @include media-min("smallDesktop") {
+    .avecamour {
+      width: px-to-rems(230, "bigDesktop");
+      transform: matrix(0.98, -0.21, 0.21, 0.98, 0, 0);
+      top: 40%;
+      left: 10%;
+ 
+    }
+    .text {
+      width: px-to-rems(230, "bigDesktop");
+      transform: matrix(1, -0.09, 0.09, 1, 0, 0);
+      bottom: -10%;
+      right: 10%;
+
+    }
+
+    .arrow{
+      width: px-to-rems(107, "bigDesktop");
+      bottom: 0%;
+      right: 21%;
+      transform: rotate(-124deg) scaleY(-1);
+    }
+
+  }
+
+  @include media-min-and-max("tabletsPortrait", "smallDesktop") {
+    .avecamour {
+      width: px-to-rems(230, "mobiles");
+      transform: matrix(0.98, -0.21, 0.21, 0.98, 0, 0);
+      top: 40%;
+      left: 10%;
+ 
+    }
+
+    .text {
+      width: px-to-rems(127, "mobiles");
+      transform: matrix(1, -0.09, 0.09, 1, 0, 0);
+      bottom: -10%;
+      right: 7%;
+ 
+    }
+    .arrow{
+      width: px-to-rems(107, "bigDesktop");
+      bottom: 0%;
+      right: 21%;
+      transform: rotate(-124deg) scaleY(-1);
+    }
+  }
+
+  @include media-max("tabletsPortrait") {
+    .avecamour {
+      width: px-to-rems(230, "mobiles");
+      transform: matrix(0.95, 0.31, -0.31, 0.95, 0, 0);
+      top: 15%;
+      right: 10%;
+ 
+    }
+
+    .text {
+      width: px-to-rems(127, "mobiles");
+      transform: matrix(1, -0.09, 0.09, 1, 0, 0);
+      bottom: 7%;
+      right: 7%;
+ 
+    }
+
+    .arrow{
+      width: px-to-rems(107, "bigDesktop");
+      bottom: 10%;
+      right: 31%;
+      transform: rotate(-124deg) scaleY(-1);
+    }
+  }
+}
