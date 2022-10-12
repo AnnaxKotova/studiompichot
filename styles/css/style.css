@@ -805,6 +805,10 @@ li {
 .footer p {
   color: white;
 }
+.footer a img,
+.footer p img {
+  filter: invert(100%);
+}
 .footer__container {
   display: flex;
 }

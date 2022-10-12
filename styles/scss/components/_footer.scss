@@ -3,6 +3,9 @@
   & a,
   p {
     color: white;
+    & img{
+      filter: invert(100%);
+    }
   }
   &__container {
     display: flex;
