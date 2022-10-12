@@ -1,209 +1,408 @@
-.assets{
-    &__container{
+.assets {
+  &__container {
     position: relative;
-    }
-    &__decor{
-      position: absolute;
-    }
+  }
+  &__decor {
+    position: absolute;
+  }
 }
 
-
-
-.studio-presentation{
-
-    @include media-min("smallDesktop") {
-        .text-figure{
-            width: px-to-rems(136, "bigDesktop")  ;
-            transform: matrix(0.95, 0.31, -0.31, 0.95, 0, 0);
-            top: -6%;
-            right: 18%;
-            & p{
-            @include border-draw(200, 160, 56, -37, "bigDesktop");
-        }
-        }
-        .flower--pink{
-            width: px-to-rems(47, "bigDesktop");
-            top: 3%;
-            right: 52%;
-        }
-        .mesexpertises--pink{
-            width: px-to-rems(195, "bigDesktop");
-            top: 47%;
-            right: 40%;
-            transform: matrix(0.98, -0.21, 0.21, 0.98, 0, 0);
-        }
-
-        .arrow{
-            width: px-to-rems(103, "bigDesktop");
-            top: 82%;
-            right: 96%;
-            transform: rotate(-52deg);
-        }
-        .text{
-            width: px-to-rems(123, "bigDesktop");
-            top: 94%;
-            right: 100%;
-            transform: matrix(0.96, -0.29, 0.29, 0.96, 0, 0);
-        }
+.studio-presentation {
+  @include media-min("smallDesktop") {
+    .text-figure {
+      width: px-to-rems(136, "bigDesktop");
+      transform: matrix(0.95, 0.31, -0.31, 0.95, 0, 0);
+      top: -6%;
+      right: 18%;
+      & p {
+        @include border-draw(200, 160, 56, -37, "bigDesktop");
+      }
+    }
+    .flower--pink {
+      width: px-to-rems(47, "bigDesktop");
+      top: 3%;
+      right: 52%;
+    }
+    .mesexpertises--pink {
+      width: px-to-rems(195, "bigDesktop");
+      top: 47%;
+      right: 40%;
+      transform: matrix(0.98, -0.21, 0.21, 0.98, 0, 0);
     }
 
-    @include media-min-and-max("tabletsPortrait", "smallDesktop") {
-        .text-figure{
-            width: px-to-rems(136, "bigDesktop")  ;
-            transform: matrix(0.95, 0.31, -0.31, 0.95, 0, 0);
-            top: -4%;
-            right: 18%;
-            & p{
-            @include border-draw(200, 160, 45, -33, "bigDesktop");
-        }
-        }
-        .flower--pink{
-            width: px-to-rems(47, "mobiles");
-            top: -3%;
-            right: 54%;
-        }
-        .mesexpertises--pink{
-            width: px-to-rems(196, "mobiles");
-            top: 44%;
-            right: 40%;
-            transform: matrix(0.98, -0.21, 0.21, 0.98, 0, 0);
-        }
+    .arrow {
+      width: px-to-rems(103, "bigDesktop");
+      top: 82%;
+      right: 96%;
+      transform: rotate(-52deg);
+    }
+    .text {
+      width: px-to-rems(123, "bigDesktop");
+      top: 94%;
+      right: 100%;
+      transform: matrix(0.96, -0.29, 0.29, 0.96, 0, 0);
+    }
+  }
 
-        .arrow{
-            width: px-to-rems(103, "mobiles");
-            top: 78%;
-            right: 91%;
-            transform: rotate(-52deg);
-        }
-        .text{
-            width: px-to-rems(123, "bigDesktop");
-            top: 91%;
-            right: 96%;
-            transform: matrix(0.96, -0.29, 0.29, 0.96, 0, 0);
-        }
+  @include media-min-and-max("tabletsPortrait", "smallDesktop") {
+    .text-figure {
+      width: px-to-rems(136, "bigDesktop");
+      transform: matrix(0.95, 0.31, -0.31, 0.95, 0, 0);
+      top: -4%;
+      right: 18%;
+      & p {
+        @include border-draw(200, 160, 45, -33, "bigDesktop");
+      }
+    }
+    .flower--pink {
+      width: px-to-rems(47, "mobiles");
+      top: -3%;
+      right: 54%;
+    }
+    .mesexpertises--pink {
+      width: px-to-rems(196, "mobiles");
+      top: 44%;
+      right: 40%;
+      transform: matrix(0.98, -0.21, 0.21, 0.98, 0, 0);
     }
 
-    @include media-max("tabletsPortrait") {
-        .text-figure{
-            width: px-to-rems(106, "mobiles");
-            transform: matrix(0.95, 0.31, -0.31, 0.95, 0, 0);
-            top: -42%;
-            right: 7%;
-            font-size: px-to-rems(12, "mobiles");
-            & p{
-            @include border-draw(130, 160, 68, -14, "mobiles");
-        }
-        }
-        .flower--pink{
-            width: px-to-rems(17, "mobiles");
-            top: -3%;
-            right: 42%;
-        }
-        .mesexpertises--pink{
-            width: px-to-rems(92, "mobiles");
-            top: 28%;
-            right: 45%;
-            transform: matrix(0.98, -0.21, 0.21, 0.98, 0, 0);
-        }
-
-        .arrow{
-            width: px-to-rems(120, "mobiles");
-            top: 55%;
-            right: 47%;
-            transform: rotate(-52deg);
-        }
-        .text{
-            width: px-to-rems(123, "bigDesktop");
-            top: 70%;
-            right: 76%;
-            font-size: px-to-rems(12, "mobiles");
-            transform: matrix(0.96, -0.29, 0.29, 0.96, 0, 0);
-        }
+    .arrow {
+      width: px-to-rems(103, "mobiles");
+      top: 78%;
+      right: 91%;
+      transform: rotate(-52deg);
     }
-}
-
-.personal-presentation{
-    @include media-min("smallDesktop") {
-
-        .rond--black{
-            width: px-to-rems(106, "bigDesktop")  ;
-            left: 4%;
-            bottom: 16%;
-        }
-
-
-        .flower--black{
-            width: px-to-rems(21, "bigDesktop")  ;
-            top: 30%;
-    right: 31%;
-
-        }
-
-        .text-figure{
-            width: px-to-rems(102, "bigDesktop")  ;
-            transform: matrix(0.95, -0.33, 0.33, 0.95, 0, 0);
-            bottom: 36%;
-            right: 22%;
-            & p{
-            @include border-draw(190, 160, 56, -49, "bigDesktop");
-            }}
-
-}
-
-@include media-min-and-max("tabletsPortrait", "smallDesktop") {
-
-.rond--black{
-    width: px-to-rems(56, "mobiles")  ;
-    left: 4%;
-    bottom: 16%;
-}
-
-
-.flower--black{
-    width: px-to-rems(11, "mobiles")  ;
-    top: 30%;
-right: 31%;
-
-}
-
-.text-figure{
-    width: px-to-rems(102, "mobiles")  ;
-    transform: matrix(0.95, -0.33, 0.33, 0.95, 0, 0);
-    bottom: 20%;
-    right: 10%;
-    & p{
-    @include border-draw(176, 132, 56, -44, "mobiles");
-    }}
-
-
-}
-
-@include media-max("tabletsPortrait") {
-
-    .rond--black{
-        width: 4rem;
-        left: 19%;
-        top: 3%;
-        transform: rotate(80deg);
+    .text {
+      width: px-to-rems(123, "bigDesktop");
+      top: 91%;
+      right: 96%;
+      transform: matrix(0.96, -0.29, 0.29, 0.96, 0, 0);
     }
-    
-    
-    .flower--black{
-    //     width: px-to-rems(11, "mobiles")  ;
-    //     top: 30%;
-    // right: 31%;
-            display: none;
+  }
+
+  @include media-max("tabletsPortrait") {
+    .text-figure {
+      width: px-to-rems(106, "mobiles");
+      transform: matrix(0.95, 0.31, -0.31, 0.95, 0, 0);
+      top: -42%;
+      right: 7%;
+      font-size: px-to-rems(12, "mobiles");
+      & p {
+        @include border-draw(130, 160, 68, -14, "mobiles");
+      }
     }
-    
-    .text-figure{
-        width: px-to-rems(72, "mobiles")  ;
-        transform: matrix(0.95, -0.33, 0.33, 0.95, 0, 0);
-        top: 20%;
-        right: 10%;
-        & p{
+    .flower--pink {
+      width: px-to-rems(17, "mobiles");
+      top: -3%;
+      right: 42%;
+    }
+    .mesexpertises--pink {
+      width: px-to-rems(92, "mobiles");
+      top: 28%;
+      right: 45%;
+      transform: matrix(0.98, -0.21, 0.21, 0.98, 0, 0);
+    }
+
+    .arrow {
+      width: px-to-rems(120, "mobiles");
+      top: 55%;
+      right: 47%;
+      transform: rotate(-52deg);
+    }
+    .text {
+      width: px-to-rems(123, "bigDesktop");
+      top: 70%;
+      right: 76%;
+      font-size: px-to-rems(12, "mobiles");
+      transform: matrix(0.96, -0.29, 0.29, 0.96, 0, 0);
+    }
+  }
+}
+
+.personal-presentation {
+  @include media-min("smallDesktop") {
+    .rond--black {
+      width: px-to-rems(106, "bigDesktop");
+      left: 4%;
+      bottom: 16%;
+    }
+
+    .flower--black {
+      width: px-to-rems(21, "bigDesktop");
+      top: 30%;
+      right: 31%;
+    }
+
+    .text-figure {
+      width: px-to-rems(102, "bigDesktop");
+      transform: matrix(0.95, -0.33, 0.33, 0.95, 0, 0);
+      bottom: 36%;
+      right: 22%;
+      & p {
+        @include border-draw(190, 160, 56, -49, "bigDesktop");
+      }
+    }
+  }
+
+  @include media-min-and-max("tabletsPortrait", "smallDesktop") {
+    .rond--black {
+      width: px-to-rems(56, "mobiles");
+      left: 4%;
+      bottom: 16%;
+    }
+
+    .flower--black {
+      width: px-to-rems(11, "mobiles");
+      top: 30%;
+      right: 31%;
+    }
+
+    .text-figure {
+      width: px-to-rems(102, "mobiles");
+      transform: matrix(0.95, -0.33, 0.33, 0.95, 0, 0);
+      bottom: 20%;
+      right: 10%;
+      & p {
+        @include border-draw(176, 132, 56, -44, "mobiles");
+      }
+    }
+  }
+
+  @include media-max("tabletsPortrait") {
+    .rond--black {
+      width: 4rem;
+      left: 19%;
+      top: 3%;
+      transform: rotate(80deg);
+    }
+
+    .flower--black {
+      //     width: px-to-rems(11, "mobiles")  ;
+      //     top: 30%;
+      // right: 31%;
+      display: none;
+    }
+
+    .text-figure {
+      width: px-to-rems(72, "mobiles");
+      transform: matrix(0.95, -0.33, 0.33, 0.95, 0, 0);
+      top: 20%;
+      right: 10%;
+      & p {
         @include border-draw(106, 132, 49, -21, "mobiles");
-        }}
-    
-    
+      }
+    }
+  }
 }
+
+.offers {
+  @include media-min("smallDesktop") {
+    .text-figure {
+      width: px-to-rems(122, "bigDesktop");
+      transform: matrix(0.97, 0.24, -0.24, 0.97, 0, 0);
+      top: -8%;
+      right: -30%;
+      & p {
+        @include border-draw(160, 160, 61, -24, "bigDesktop");
+      }
+    }
+  }
+
+  @include media-min-and-max("tabletsPortrait", "smallDesktop") {
+    .text-figure {
+      width: px-to-rems(102, "mobiles");
+      transform: matrix(0.97, 0.24, -0.24, 0.97, 0, 0);
+      bottom: 47%;
+      right: -55%;
+      & p {
+        @include border-draw(126, 132, 52, -18, "mobiles");
+      }
+    }
+  }
+
+  @include media-max("tabletsPortrait") {
+    .text-figure {
+      width: px-to-rems(72, "mobiles");
+      transform: matrix(0.95, -0.33, 0.33, 0.95, 0, 0);
+      top: 20%;
+      right: 10%;
+      & p {
+        @include border-draw(106, 132, 49, -21, "mobiles");
+      }
+    }
+  }
+}
+
+
+.collaboration{
+    @include media-min("smallDesktop") {
+        .text-figure {
+          width: px-to-rems(122, "bigDesktop");
+          transform: matrix(0.97, 0.24, -0.24, 0.97, 0, 0);
+          bottom: 4%;
+          left: 10%;
+          & p {
+            @include border-draw(160, 160, 61, -24, "bigDesktop");
+          }
+        }
+      }
+    
+      @include media-min-and-max("tabletsPortrait", "smallDesktop") {
+        .text-figure {
+          width: px-to-rems(102, "mobiles");
+          transform: matrix(0.97, 0.24, -0.24, 0.97, 0, 0);
+          bottom: 4%;
+          left: 10%;
+          & p {
+            @include border-draw(126, 132, 52, -18, "mobiles");
+          }
+        }
+      }
+    
+      @include media-max("tabletsPortrait") {
+        .text-figure {
+          width: px-to-rems(72, "mobiles");
+          transform: matrix(0.95, -0.33, 0.33, 0.95, 0, 0);
+          bottom: 4%;
+          left: 10%;
+          & p {
+            @include border-draw(106, 132, 49, -21, "mobiles");
+          }
+        }
+      }
+}
+
+
+.services-carte{
+  @include media-min("smallDesktop") {
+    .text {
+      width: px-to-rems(122, "bigDesktop");
+      transform: matrix(1, -0.09, 0.09, 1, 0, 0);
+      bottom: 4%;
+      right: 10%;
+
+    }
+    .arrow{
+      width: px-to-rems(122, "bigDesktop");
+      bottom: 14%;
+      right: 19%;
+      transform: rotate(-124deg) scaleY(-1);
+    }
+  }
+  @include media-min-and-max("tabletsPortrait", "smallDesktop") {
+    .text {
+      width: px-to-rems(122, "mobiles");
+      transform: matrix(1, -0.09, 0.09, 1, 0, 0);
+      bottom: 4%;
+      right: 10%;
+
+    }
+    .arrow{
+      width: px-to-rems(122, "mobiles");
+      bottom: 14%;
+      right: 19%;
+      transform: rotate(-124deg) scaleY(-1);
+    }
+  }
+
+  @include media-max("tabletsPortrait") {
+    .text {
+      width: px-to-rems(122, "mobiles");
+      transform: matrix(1, -0.09, 0.09, 1, 0, 0);
+      bottom: 4%;
+      right: 10%;
+
+    }
+    .arrow{
+      width: px-to-rems(122, "mobiles");
+      bottom: 14%;
+      right: 19%;
+      transform: rotate(-124deg) scaleY(-1);
+    }
+  }
+}
+
+
+.contact{
+  @include media-min("smallDesktop") {
+    .text-figure {
+      width: px-to-rems(101, "bigDesktop");
+      transform: matrix(0.97, 0.24, -0.24, 0.97, 0, 0);
+      top: 54%;
+    right: 49%;
+      & p {
+        @include border-draw(160, 160, 61, -24, "bigDesktop");
+      }
+    }
+    .text {
+      width: px-to-rems(122, "bigDesktop");
+      transform: matrix(1, -0.09, 0.09, 1, 0, 0);
+      bottom: 1%;
+      right: 43%;
+
+    }
+
+    .arrow{
+      width: px-to-rems(122, "bigDesktop");
+      bottom: 8%;
+      right: 53%;
+      transform: rotate(-124deg) scaleY(-1);
+    }
+  }
+
+
+
+  @include media-min-and-max("tabletsPortrait", "smallDesktop") {
+    .text-figure {
+      width: px-to-rems(78, "mobiles");
+      transform: matrix(0.97, 0.24, -0.24, 0.97, 0, 0);
+      top: 54%;
+    right: 49%;
+      & p {
+        @include border-draw(109, 160, 63, -20, "mobiles");
+      }
+    }
+    .text {
+      width: px-to-rems(122, "mobiles");
+      transform: matrix(1, -0.09, 0.09, 1, 0, 0);
+      bottom: 1%;
+      right: 35%;
+
+    }
+
+    .arrow{
+      width: px-to-rems(122, "bigDesktop");
+      bottom: 8%;
+      right: 53%;
+      transform: rotate(-124deg) scaleY(-1);
+    }
+  }
+
+
+  @include media-max("tabletsPortrait") {
+    .text-figure {
+      width: px-to-rems(38, "mobiles");
+      transform: matrix(0.97, 0.24, -0.24, 0.97, 0, 0);
+      top: 22%;
+      right: 31%;
+      & p {
+        @include border-draw(109, 160, 63, -40, "mobiles");
+      }
+    }
+    .text {
+      width: px-to-rems(122, "mobiles");
+      transform: matrix(1, -0.09, 0.09, 1, 0, 0);
+      bottom: 28%;
+      right: 29%;
+
+    }
+
+    .arrow{
+      width: px-to-rems(122, "bigDesktop");
+      bottom: 28%;
+      right: 53%;
+      transform: rotate(-139deg);
+    }
+  }
+
 }

@@ -15,6 +15,7 @@
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   line-height: 1.5;
+  color: $black;
 }
 
 .quikens {
@@ -72,6 +73,8 @@ html {
 
 img {
   width: 100%;
+  vertical-align: middle;
+  box-sizing: border-box;
 }
 
 h1 {
@@ -113,16 +116,17 @@ h2 {
 }
 
 h3 {
+  font-weight: 600;
   @include media-min("smallDesktop") {
-    font-size: px-to-rems(30, "bigDesktop");
+    font-size: px-to-rems(24, "bigDesktop");
     line-height: px-to-rems(46, "bigDesktop");
   }
   @include media-min-and-max("tabletsPortrait", "smallDesktop") {
-    font-size: px-to-rems(24, "mobiles");
+    font-size: px-to-rems(16, "mobiles");
     line-height: px-to-rems(35, "mobiles");
   }
   @include media-max("tabletsPortrait") {
-    font-size: px-to-rems(24, "mobiles");
+    font-size: px-to-rems(16, "mobiles");
     line-height: px-to-rems(35, "mobiles");
   }
 }
@@ -135,7 +139,7 @@ h4 {
   }
 
   @include media-min-and-max("tabletsPortrait", "smallDesktop") {
-    font-size: px-to-rems(16, "mobiles");
+    font-size: px-to-rems(14, "mobiles");
   }
 
   @include media-max("tabletsPortrait") {
@@ -167,14 +171,17 @@ strong {
 
 section {
   @include media-min("smallDesktop") {
-    padding: px-to-rems(105, "bigDesktop") 14.2% px-to-rems(90, "bigDesktop")
-      7.1%;
+    padding: px-to-rems(105, "bigDesktop") 7.1% px-to-rems(90, "bigDesktop")
+       14.2%;
   }
   @include media-min-and-max("tabletsPortrait", "smallDesktop") {
     padding: four-px-to-rems(77, 80, 59, 80, "mobiles");
   }
   @include media-max("tabletsPortrait") {
     padding: four-px-to-rems(52, 36, 2, 36, "mobiles");
+  }
+  &:last-of-type{
+    margin-bottom: 8rem;
   }
 }
 
@@ -203,4 +210,22 @@ section {
   @include media-max("tabletsPortrait") {
 font-size: 12px;
   }
+}
+
+
+li{
+  list-style: url('../../../assets/images/flower--pink.svg');
+  padding-left: 1.5rem;
+}
+
+
+.centered-annonce{
+  text-align: center;
+  & h2{
+    margin-bottom: 2rem;
+  }
+  & p{
+    margin-bottom: 4rem;
+  }
+
 }

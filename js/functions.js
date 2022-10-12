@@ -22,7 +22,5 @@ export const changeColorInterval = () =>{
 
 
 export const headerChange = () =>{
-    header.classList.add('highlight--white');
-  
-
+    header.classList.add('highlight--white'); 
   }

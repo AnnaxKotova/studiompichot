@@ -1,0 +1,80 @@
+[{
+    "id": 1,
+    "thumbnail" : "../assets/PROJECTS/ARS/couverture.png",
+    "title": "RUNNIN’CITY",
+    "tags": ["Identité visuelle", "Webdesign"],
+    
+    "poster": "../assets/PROJECTS/LAPARITAINE/Laparitaine.png",
+    "description": "Dans le cadre d’un appel d’offre, le client Runnin’city nous a mis au défi de moderniser son site et application sans changer l’intégralité de leur charte graphique. J’ai été chargé de l’ensemble de la partie visuelle de ce projet. J’ai opté pour une identité sobre et élégante en ajoutant des touches de couleurs pour rappeler le coté sport. "
+  }, {
+    "id": 2,
+    "thumbnail" : "../assets/PROJECTS/ARS/couverture.png",
+    "title": "LAPARITAINE",
+    "tags": ["Réseaux sociaux", "Photographie"],
+    "poster": "../assets/PROJECTS/LAPARITAINE/Laparitaine.png",
+    "description": "Shooting photo, post production et création de moodboard pour mettre en avant les bijoux du client Laparitaine. Les photos étaient destinées principalement aux réseaux sociaux du client, j’ai donc fait le choix de rendre les photos dans un format post et story. "
+  },  {
+    "id": 3,
+    "thumbnail" : "../assets/PROJECTS/ARS/couverture.png",
+    "title": "MINESIO",
+    "tags": ["Webdesign", "Réseaux sociaux", "Illustration"],
+    "poster": "../assets/PROJECTS/LAPARITAINE/Laparitaine.png",
+    "description": "Le client Globassur voulait une nouvelle identité visuelle, plus moderne et plus en accord avec ses nouvelles valeurs. Il a fallu dans un premier temps changer de nom et créer un logo. Pour répondre à la volonté du client d’avoir une image plus rassurante, je suis partie sur la création d’illustration et pictogramme avec le vert en couleur principale. L’identité visuelle à été déclinée sur le site web, les réseaux sociaux, les cartes de visites et les goodies de l’entreprise. "
+  }, {
+    "id": 4,
+    "thumbnail" : "../assets/PROJECTS/INDIANA/couverture.png",
+    "title": "INDIANA",
+    "tags": ["Webdesign", "Print"],
+    "poster": "../assets/PROJECTS/LAPARITAINE/Laparitaine.png",
+    "description": "Dans le cadre d’un appel d’offre, le client Idiana café nous à mis au défit de moderniser l’image de sa marque en gardant son logo. Sur ce projet, j’ai refais les cartes du restaurant avec une version mobile accessible avec un QR Code et une version print. Pour promouvoir cette nouvelle identité, j’ai décliné celle ci sur trois affiches et j’ai également refais le site web."
+  }, {
+    "id": 5,
+    "thumbnail" : "../assets/PROJECTS/ARS/couverture.png",
+    "title": "ARSPIRIT",
+    "tags": ["Webdesign", "Print"],
+    "poster": "../assets/PROJECTS/LAPARITAINE/Laparitaine.png",
+    "description":"Dans le cadre d’un appel d’offre, le client Arspirit nous a demandé de rebrander son image de marque en passant par le site mais également par le packaging de ses bouteilles. Dans un premier temps j’ai créé un packaging primaire plus proche des valeurs de la marque, sobre et respectueux de l’environnement. Pour approcher le marque d’un coté haute gamme j’ai fais le choix de créer un packaging secondaire pour la vente de la bouteille. Pour le site j’ai fais le choix de mettre en avant le visuel de la bouteille et mis en avant des cocktails pour donner envie aux consommateurs."
+  }, {
+    "id": 6,
+    "thumbnail" : "../assets/PROJECTS/ARS/couverture.png",
+    "title": "TX CONSULTING",
+    "tags": ["Identité visuelle", "Réseaux sociaux"],
+    "poster": "../assets/PROJECTS/LAPARITAINE/Laparitaine.png",
+    "description": "L’agence TX Consulting avait depuis plusieurs années une identité visuelle qui ne correspondait plus à ses valeurs et projets. On m’a donc donné carte blanche pour rebrander complément l’entreprise. Dans un premier temps j’ai créé un logo plus moderne puis j’ai fais appel à un motion designer 3D pour la création de pictogrammes 3D. J’ai ensuite adaptée la nouvelle identité sur le site, les réseaux sociaux, les power point, le livre blanc, les goodies etc... "
+  }, {
+    "id": 7,
+    "thumbnail" : "../assets/PROJECTS/ARS/couverture.png",
+    "title": "REVLON",
+    "tags": ["Réseaux sociaux"],
+    "poster": "../assets/PROJECTS/LAPARITAINE/Laparitaine.png",
+    "description":"Shooting photo et post production pour mettre en avant les produits de Revlon France. Ces photos étaient exclusivement destinées au compte instagram @revlonfrance et @revlon. "
+  }, {
+    "id": 8,
+    "thumbnail" : "../assets/PROJECTS/ARS/couverture.png",
+    "title": "CAHIER CENTRAL",
+    "tags": ["Print"],
+    "poster": "../assets/PROJECTS/LAPARITAINE/Laparitaine.png",
+    "description": "Lors d’un projet d’étude le magazine Cahier Central nous a demandé d’imaginer un magazine en accord avec leur ligne éditoriale. Avec mon groupe nous avons décidé de créer un magazine culinaire qui met en avant des saveurs atypiques venant des quatre coins du monde. Nous avons fait le choix de partir sur un magazine très épuré et blanc pour dissoner avec le sujet du magazine où les plats peuvent paraitre comme répulsant. "
+  }, {
+    "id": 9,
+    "thumbnail" : "../assets/PROJECTS/ARS/couverture.png",
+    "title": "SAINT JAMES",
+    "tags": ["Réseaux sociaux"],
+    "poster": "../assets/PROJECTS/LAPARITAINE/Laparitaine.png",
+    "description":"Créations de stories instagram de recette à la une pour le client Saint James."
+  }, {
+    "id": 10,
+    "thumbnail" : "../assets/PROJECTS/ARS/couverture.png",
+    "title": "BILLBOARD",
+    "tags": ["Webdesign"],
+    "poster": "../assets/PROJECTS/LAPARITAINE/Laparitaine.png",
+    "description": "Lors d’un projet d’étude il nous à été demandé d’adapter le magazine print de notre choix en application Web. Mon choix c’est porté vers le magazine Billboard."
+  }, {
+    "id": 11,
+    "thumbnail" : "../assets/PROJECTS/ARS/couverture.png",
+    "title": "SHOWREEL CCUA",
+    "tags": [],
+    "poster": "../assets/PROJECTS/LAPARITAINE/Laparitaine.png",
+    "description": "Pour clôturer l’année 2019, l’agence C’est comme une agence m’a confié la création de leur showreel afin de mettre en avant les différents projets sur lesquels ils avaient pu travailler pendant l’année. "
+  }
+]
