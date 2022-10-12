@@ -1,0 +1,74 @@
+@mixin media-min($_key) {
+    @media screen and (min-width: map-get($breakpoints, $_key)) {
+        &{ @content; }
+    }
+}
+
+
+
+@mixin media-max($_key) {
+    @media screen and (max-width: (map-get($breakpoints, $_key))) {
+        &{ @content; }
+    }
+}
+
+@mixin media-min-and-max($_key_min, $_key_max) {
+    @media screen and (min-width: ((map-get($breakpoints, $_key_min)) + 1px)) and (max-width: ((map-get($breakpoints, $_key_max)))) {
+        &{ @content; }
+    }
+}
+
+
+
+@mixin scroller{
+
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar{
+        display: none;
+      }
+
+    & > *{
+        scroll-snap-align: center;
+    }
+}
+
+
+@mixin border-draw($width, $height, $top, $right, $size){
+    position: relative;
+
+    &::after {
+        background-image: url("../../../assets/images/border-figure.svg");
+        background-size: px-to-rems($width, $size) px-to-rems($height, $size);
+        position: absolute;
+        display: inline-block;
+        width: px-to-rems($width, $size);
+        top: -($top)*1px;
+        right: ($right)*1px;
+        height: px-to-rems($height, $size);
+        content: "";
+    }
+}
+
+
+
+
+@mixin cover ($height, $size){
+    height: px-to-rems($height, $size);
+    & > img{
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+@mixin contain ($height, $size){
+    height: px-to-rems($height, $size);
+    & > img{
+        height: 100%;
+        object-fit: contain;
+    }
+}
+

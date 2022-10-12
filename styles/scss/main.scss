@@ -3,10 +3,14 @@
 @import "./abstract/mixins";
 @import "./abstract/functions";
 
-
+@import "./base/highlights";
 @import "./base/normalize";
 @import "./base/typography";
 
 
 @import "./components/header";
+@import "./components/header--mobile";
 @import "./components/footer";
+@import "./components/decor";
+
+@import "./pages/home";

@@ -1,0 +1,40 @@
+//breakpoints
+$breakpoints: (
+    "mobiles": 410px,
+    "tabletsPortrait": 768px,
+    "tabletsLandscape": 1024px,
+    "smallDesktop": 1280px,
+    "mediumDesktop": 1440px,
+    "bigDesktop": 1760px
+);
+
+
+//colors
+
+$pink: #F59EC1;
+$blue: #0B5ABD;
+$green: #008A6F;
+$lightPink: #E0C6EE;
+$lightBlue: #AECBF0;
+$black: #030007;
+$gray: #C3C3C3;
+$beige:#F5F5F5;
+
+//filters for svg images
+
+$black-to-pink: invert(100%) sepia(95%) saturate(7315%) hue-rotate(278deg) brightness(98%) contrast(91%);
+$black-to-green: invert(26%) sepia(65%) saturate(3520%) hue-rotate(156deg) brightness(93%) contrast(101%);
+$black-to-lightPink: invert(80%) sepia(36%) saturate(329%) hue-rotate(219deg) brightness(100%) contrast(87%);
+$black-to-blue: invert(20%) sepia(67%) saturate(3859%) hue-rotate(206deg) brightness(89%) contrast(91%);
+
+
+
+$rootFontSize: (
+    "bigDesktop": 18,
+    "mediumDesktop": 17,
+    "smallDesktop": 16,
+    "tabletsLandscape": 15,
+    "mobiles": 14,
+    "smallMobiles": 13
+);
+

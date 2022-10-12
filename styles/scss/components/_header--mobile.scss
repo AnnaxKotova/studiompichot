@@ -1,0 +1,102 @@
+.header {
+
+  @include media-max("tabletsPortrait") {
+    min-width: px-to-rems(342, "mobiles");
+    padding: four-px-to-rems(25, 36, 25, 36, "mobiles");
+
+    &__navbar {
+      overflow-y: scroll;
+      background-color: $gray;
+      transition: transform 0.3s;
+      
+      transform: translateX(-100%);
+      -webkit-transition: transform 0.3s;
+      -webkit-transform: translateX(-100%);
+      z-index: 9;
+      height: 100vh;
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      &--container {
+        display: flex;
+        flex-direction: column;
+        margin-top: px-to-rems(55, "mobiles");
+        //   height: 100%;
+        margin-right: px-to-rems(37, "mobiles");
+        padding: four-px-to-rems(20, 25, 25, 36, "mobiles");
+        background-color: white;
+      }
+    }
+
+    &__close {
+      align-self: flex-end;
+    }
+
+    &__text-figure {
+      align-self: flex-end;
+      width: px-to-rems(120, "mobiles");
+      // text-align: center;
+      font-size: 12px;
+      @include border-draw(120, 120, 51, 3, "mobiles");
+      transform: matrix(0.98, 0.19, -0.19, 0.98, 0, 0);
+    }
+    &__logo--mobile {
+      margin-top: px-to-rems(5, "mobiles");
+      width: px-to-rems(173, "mobiles");
+      margin-bottom: px-to-rems(10, "mobiles");
+    }
+
+    & .navbar-show {
+      width: 100%;
+      transform: translateX(0);
+      -webkit-transform: translateX(0);
+    }
+    & .menu-burger {
+      width: px-to-rems(27, "mobiles");
+    }
+
+    &__items {
+      margin-top: px-to-rems(92, "mobiles");
+      display: flex;
+      flex-direction: column;
+      & > a {
+        margin-bottom: px-to-rems(30, "mobiles");
+        margin-left: px-to-rems(32, "mobiles");
+        &.active {
+          position: relative;
+          &::before {
+            position: absolute;
+            left: px-to-rems(-32, "mobiles");
+            content: url(../../../assets/images/flower-pink.svg);
+          }
+        }
+      }
+    }
+
+    &__contacts {
+      border-top: solid 1px $gray;
+      margin-top: px-to-rems(38, "mobiles");
+      padding-top: px-to-rems(56, "mobiles");
+      & > a {
+        display: flex;
+        margin-bottom: px-to-rems(15, "mobiles");
+        & > img {
+          width: px-to-rems(15, "mobiles");
+          margin-right: px-to-rems(17, "mobiles");
+        }
+      }
+    }
+
+
+    &__social-networks{
+        margin-top: px-to-rems(69, "mobiles");
+        display: flex;
+        align-items: center;
+        & >figure{
+            margin-right: px-to-rems(20, "mobiles");
+        }
+    }
+  }
+}
+

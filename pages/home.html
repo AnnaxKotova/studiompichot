@@ -1,13 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Studio Marie Pichot - home</title>
-    <link rel="stylesheet" href="../styles/css/style.css">
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="../styles/css/style.css" />
+  </head>
+  <body>
+    <header id="header" class="header highlight--blue">
+      <figure class="header__logo element-desktop">
+        <img src="../assets/images/logo__black--center.svg" />
+      </figure>
+      <figure class="header__logo element-mobile">
+        <img src="../assets/images/logo__black--left.svg" />
+      </figure>
+      <menu class="header__menu">
+        <nav id="navbar" class="header__navbar">
+          <div class="header__navbar--container">
+            <figure id="closeMenu" class="header__close element-mobile">
+              <img src="../assets/images/close.svg" />
+            </figure>
+            <figure class="element-mobile header__logo--mobile">
+              <img src="../assets/images/logo__black--left.svg" />
+            </figure>
+            <p class="text-figure header__text-figure element-mobile">
+              Travaillons ensemble
+            </p>
+            <div class="header__items">
+              <a
+                class="element-mobile active"
+                href="http://127.0.0.1:5500/pages/home.html"
+                >Accueil</a
+              >
+              <a>Services</a>
+              <a class="header__active">Réalisations</a>
+              <a>A propos</a>
+              <a>Contact</a>
+            </div>
+            <div class="header__contacts element-mobile">
+              <a href="tel:06 32 05 92 60">
+                <img src="../assets/images/phone.svg" />
+                <span>06 32 05 92 60</span>
+              </a>
+
+              <a href="mailto:studio.mpichot@gmail.com">
+                <img src="../assets/images/email.svg" />
+                <span>studio.mpichot@gmail.com</span>
+              </a>
+            </div>
+            <div class="header__social-networks element-mobile">
+              <figure>
+                <a href="#">
+                  <img src="../assets/images/instagram--black.svg" />
+                </a>
+              </figure>
+              <figure>
+                <a href="#">
+                  <img src="../assets/images/behance--black.svg" alt=""
+                /></a>
+              </figure>
+              <figure>
+                <a href="#">
+                  <img src="../assets/images/linkedin--black.svg" alt=""
+                /></a>
+              </figure>
+            </div>
+          </div>
+        </nav>
+        <figure id="menu-burger" class="header__menu-burger element-mobile">
+          <img src="../assets/images/menu-burger.svg" />
+        </figure>
+      </menu>
+    </header>
+
+    <section class="intro highlight--blue">
+      <h1>STUDIO GRAPHIQUE</h1>
+      <div class="intro__slogan">
+        <p class="quikens bold">
+          <span class="quikens bold">Vous êtes au b</span
+          ><img src="../assets/images/flower--black.svg" alt="" /><span
+            class="quikens bold"
+            >n endroit,</span
+          >
+        </p>
+        <p class="quikens bold">il est maintenant temps</p>
+        <p class="quikens bold">de briller</p>
+        <figure class="intro__decor">
+          <img src="../assets/images/rond--black.svg" alt="" />
+        </figure>
+      </div>
+      <p class="intro__description">
+        Hello moi c’est Marie, je suis une freelance située a Paris j’aide les
+        entreprise à travailler leur image de marque.
+      </p>
+      <a href="#" class="button intro__button">Me contacter</a>
+    </section>
+
+    <section class="studio-presentation">
+      <h2>Studio graphique</h2>
+      <p>Mes différentes expertises</p>
+      <div class="studio-presentation__poster assets__container">
+        <p class="extreme--blue">Graphisme</p>
+        <p class="extreme--blue">Photos Vidéos Web</p>
+        <p class="extreme--blue">Print Illustrations</p>
+        <a href="#" class="button button--black">Découvrir mes offres</a>
+        <div class="studio-presentation__decors">
+          <div class="text-figure assets__decor">
+            <p>Devenez une icône</p>
+          </div>
+          <img
+            src="../assets/images/flower--pink.svg"
+            alt=""
+            class="assets__decor flower--pink"
+          />
+          <img
+            class="assets__decor mesexpertises--pink"
+            src="../assets/images/mesexpertises--pink.svg"
+            alt=""
+          />
+          <img
+            src="../assets/images/arrow.svg"
+            alt=""
+            class="assets__decor arrow"
+          />
+          <p class="text assets__decor">Une com de caractère</p>
+        </div>
+      </div>
+      <h2>
+        Mes réalisati<img src="../assets/images/flower--black.svg" alt="" />ns
+      </h2>
+      <p>Découvrez mon univers graphique à travers mes projets</p>
+      <div class="studio-presentation__realisations slider--container">
+        <div class="studio-presentation__line slider--line">
+          <div class="studio-presentation__item slider--item">
+            <figure>
+              <img src="../assets/PROJECTS/ARS/couverture.png" alt="" />
+            </figure>
+            <h4>ARSPIRIT</h4>
+          </div>
+          <div class="studio-presentation__item slider--item">
+            <figure>
+              <img src="../assets/PROJECTS/INDIANA/couverture.png" alt="" />
+            </figure>
+            <h4>ARSPIRIT</h4>
+          </div>
+          <div class="studio-presentation__item slider--item">
+            <figure>
+              <img src="../assets/PROJECTS/MINESIO/COUVERTURE.png" alt="" />
+            </figure>
+            <h4>MINESIO</h4>
+          </div>
+        </div>
+      </div>
+      <div class="studio-presentation__more">
+        <a href="#"
+          ><span class="bold">Découvrir tous mes projets </span
+          ><img src="../assets/images/arrow--right.svg" alt=""
+        /></a>
+      </div>
+    </section>
+
+    <section class="personal-presentation assets__container">
+      <div class="personal-presentation__container">
+        <figure class="personal-presentation__image">
+          <img src="../assets/PROJECTS/INDIANA/couverture.png" alt="" />
+        </figure>
+
+        <div class="personal-presentation__text">
+          <h2>Salut, moi c’est Marie !</h2>
+          <p>
+            Directrice artistique et graphiste basée à Paris, j’aide les
+            entreprise à travailler leur image de marque.
+          </p>
+          <a href="" class="button button--black">A propos</a>
+        </div>
+      </div>
+      <div class="personal-presentation__decor">
+        <img
+          src="../assets/images/rond--black.svg"
+          alt=""
+          class="rond--black assets__decor"
+        />
+        <img
+          src="../assets/images/flower--black.svg"
+          alt=""
+          class="flower--black assets__decor"
+        />
+        <div class="text-figure assets__decor">
+          <p>On prend un café ?</p>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="work-together">
+      <h2 class="quikens">Travaill<img src="../assets/images/flower--black.svg" alt="" />ns ensemble !</h2>
+      <p>Discutons de votre projet par mail, téléphone ou autour d’un café !</p>
+      <a href="#" class="button button--black">Me contacter</a>
+    </section>
+    <footer class="footer">
+      <div class="footer__container">
+        <figure class="footer__logo">
+          <img src="../assets/images/logo__white--center.svg" />
+        </figure>
+
+        <div class="footer__social-networks">
+          <p>Suivez moi sur les réseaux sociaux !</p>
+          <div class="footer__social-networks--container">
+            <figure>
+              <a href="#">
+                <img src="../assets/images/instagram--white.svg" />
+              </a>
+            </figure>
+            <figure>
+              <a href="#">
+                <img src="../assets/images/behance--white.svg" alt=""
+              /></a>
+            </figure>
+            <figure>
+              <a href="#">
+                <img src="../assets/images/linkedin--white.svg" alt=""
+              /></a>
+            </figure>
+          </div>
+        </div>
+
+        <menu class="footer__menu">
+          <a>Services</a>
+          <a>Réalisations</a>
+          <a>A propos</a>
+        </menu>
+
+        <div class="footer__contacts">
+          <p class="bold">Contacts</p>
+          <a href="mailto:studio.mpichot@gmail.com">studio.mpichot@gmail.com</a>
+          <a href="tel:06 32 05 92 60">06 32 05 92 60</a>
+        </div>
+      </div>
+
+      <a class="footer__legal-mentions">Mentions légales</a>
+    </footer>
+
+    <script type="module" src="../js/script.js"></script>
+  </body>
 </html>

@@ -69,9 +69,11 @@
 	background-color: transparent;
   }
 
-  a, a:hover, a:visited, a:active{
+  a{
     display: inline-block;
     text-decoration: none;
+    color: unset;
+
   }
   
   /**
