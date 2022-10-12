@@ -18,11 +18,10 @@ const getProjectForPoster = (json) => setTimeout(function () {
     button.addEventListener("click", function (event) {
       let projectName = button.querySelector(".realisations__title").textContent;
       generatePoster(json, projectName);
-
     });
   })
   //we have to wain until all the images download
-}, 1000);
+}, 10);
 
 
 if (menuBurger) {
@@ -76,7 +75,7 @@ fetch("../js/projects.json")
   .then((json) => {
     let tagName = "Tout";
     generateProjects(json, tagName);
-
+    getProjectForPoster(json);
     let tags = document.querySelectorAll(".realisations__tag");
     tags.forEach((tag) => {
       tag.addEventListener("click", function (event) {
@@ -84,7 +83,7 @@ fetch("../js/projects.json")
         generateProjects(json, tag.textContent);
         getProjectForPoster(json);
       });
-      getProjectForPoster(json);
+
     });
 
 

@@ -93,7 +93,7 @@ export const generatePoster = (json, projectName) => {
     console.log(otherProjectsJson);
     let otherProjectsContainer = document.querySelector(".realisations__other-projects") ;
     
-    // console.log(otherProjectsJson));
+    console.log(otherProjectsContainer);
     for (let i = 0; i < otherProjectsJson.length; i++) {
       let realisationsTemplate = document.querySelector("#realisations__other-items").content;
       otherProjectsContainer.append(realisationsTemplate.cloneNode(true));

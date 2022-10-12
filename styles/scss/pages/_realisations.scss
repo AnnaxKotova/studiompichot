@@ -1,129 +1,155 @@
-.realisations{
+.realisations {
   @include media-min("smallDesktop") {
-
-  &__container{
-    display: flex;
-    margin-top: px-to-rems(158, "bigDesktop");
-  }
-  &__sidebar{
-    flex: 0 0 18%;
-  }
-  &__tag{
-    margin-bottom: px-to-rems(9, "bigDesktop");
-  }
-  &__main{
-    flex: 0 0 72%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    gap: 2%;
-  }
-  &__item{
-    flex: 0 0 32%;
-
-    // &:nth-child(n+1){
-    //   margin-right: 1%;
-    //   margin-left: 1%;
-    // }
-    & figure{
-      @include cover(298, "bigDesktop");
-      margin-bottom: px-to-rems(5, "bigDesktop");
+    &__container {
+      display: flex;
+      margin-top: px-to-rems(158, "bigDesktop");
     }
-    
-  }
-  &__title{
-    margin-bottom: px-to-rems(15, "bigDesktop");
-  }
-}
-
-
-@include media-min-and-max("tabletsPortrait", "smallDesktop") {
-
-  &__container{
-    display: flex;
-    margin-top: px-to-rems(47, "mobiles");
-  }
-  &__sidebar{
-    flex: 0 0 25.5%;
-  }
-  &__tag{
-    margin-bottom: px-to-rems(19, "mobiles");
-  }
-  &__main{
-    flex: 0 0 74.5%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    gap: 1%;
-  }
-  &__item{
-    flex: 0 0 32%;
-
-    // &:nth-child(n+1){
-    //   margin-right: 1%;
-    //   margin-left: 1%;
-    // }
-    & figure{
-      @include cover(155, "mobiles");
-      margin-bottom: px-to-rems(10, "mobiles");
+    &__sidebar {
+      flex: 0 0 18%;
     }
-    
+    &__tag {
+      margin-bottom: px-to-rems(9, "bigDesktop");
+    }
+    &__main {
+      flex: 0 0 72%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      gap: 2%;
+    }
+    &__item {
+      flex: 0 0 32%;
+
+      // &:nth-child(n+1){
+      //   margin-right: 1%;
+      //   margin-left: 1%;
+      // }
+      & figure {
+        @include cover(298, "bigDesktop");
+        margin-bottom: px-to-rems(5, "bigDesktop");
+      }
+    }
+    &__title {
+      margin-bottom: px-to-rems(15, "bigDesktop");
+    }
   }
-  &__title{
-    margin-bottom: px-to-rems(15, "mobiles");
-    // font-size: px-to-rems(14, "mobiles");
+
+  @include media-min-and-max("tabletsPortrait", "smallDesktop") {
+    &__container {
+      display: flex;
+      margin-top: px-to-rems(47, "mobiles");
+    }
+    &__sidebar {
+      flex: 0 0 25.5%;
+    }
+    &__tag {
+      margin-bottom: px-to-rems(19, "mobiles");
+    }
+    &__main {
+      flex: 0 0 74.5%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      gap: 1%;
+    }
+    &__item {
+      flex: 0 0 32%;
+
+      // &:nth-child(n+1){
+      //   margin-right: 1%;
+      //   margin-left: 1%;
+      // }
+      & figure {
+        @include cover(155, "mobiles");
+        margin-bottom: px-to-rems(10, "mobiles");
+      }
+    }
+    &__title {
+      margin-bottom: px-to-rems(15, "mobiles");
+      // font-size: px-to-rems(14, "mobiles");
+    }
+  }
+
+  @include media-max("tabletsPortrait") {
+
+
+    &__main {
+      margin-top: px-to-rems(36, "mobiles");
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      // gap: 1%;
+    }
+    &__item {
+      flex: 0 0 48%;
+
+      &:nth-child(n+1){
+        margin-right: 1%;
+        margin-left: 1%;
+      }
+      & > figure {
+        @include cover(111, "mobiles");
+        margin-bottom: px-to-rems(8, "mobiles");
+      }
+    }
+    &__title {
+      margin-bottom: px-to-rems(15, "mobiles");
+      // font-size: px-to-rems(14, "mobiles");
+    }
   }
 }
-
-}
-
-
 
 // popup styles
-.realisations{
+.realisations {
   @include media-min("smallDesktop") {
-
-    &__background{
+    &__background {
       position: absolute;
       top: 0;
       z-index: 99999;
       background-color: gray;
-      padding: px-to-rems(218, "bigDesktop") 17.2% px-to-rems(116, "bigDesktop");      
+      padding: px-to-rems(218, "bigDesktop") 17.2% px-to-rems(116, "bigDesktop");
     }
-    &__board{
+    &__board {
       background-color: white;
       padding-top: px-to-rems(49, "bigDesktop");
     }
-    &__back{
+    &__back {
       display: flex;
       margin: 0 px-to-rems(52, "bigDesktop");
-      & img{
+      & img {
         width: 1.5rem;
-        margin-right: .25rem;
+        margin-right: 0.25rem;
       }
     }
-    &__name{
+    &__name {
       margin: px-to-rems(18, "bigDesktop") px-to-rems(52, "bigDesktop") 0;
     }
-    &__description{
+    &__description {
       margin: px-to-rems(36, "bigDesktop") px-to-rems(52, "bigDesktop") 0;
     }
-    &__poster{
+    &__poster {
       // box-sizing: border-box;
-      padding:  px-to-rems(57, "bigDesktop") px-to-rems(16, "bigDesktop") px-to-rems(61, "bigDesktop");
+      padding: px-to-rems(57, "bigDesktop") px-to-rems(16, "bigDesktop")
+        px-to-rems(61, "bigDesktop");
     }
-    &__other-projects{
-
-      padding:  px-to-rems(42, "bigDesktop") px-to-rems(86, "bigDesktop") px-to-rems(62, "bigDesktop");
+    &__other-projects {
+      padding: px-to-rems(42, "bigDesktop") px-to-rems(86, "bigDesktop")
+        px-to-rems(62, "bigDesktop");
       display: flex;
-      gap: px-to-rems(20, "bigDesktop");
+      gap: 2%;
       background-color: $beige;
     }
-    &__other-title{
+    &__other-item {
+      flex: 0 0 48%;
+      & > figure {
+        @include cover(399, "bigDesktop");
+      }
+    }
+    &__other-title {
       margin-top: px-to-rems(10, "bigDesktop");
     }
-    &__wall{
-      & .work-together{
+    &__wall {
+      & .work-together {
         background-color: white;
         padding: px-to-rems(56, "bigDesktop") 0 px-to-rems(139, "bigDesktop");
       }
@@ -131,51 +157,116 @@
   }
 
   @include media-min-and-max("tabletsPortrait", "smallDesktop") {
-
-    &__background{
+    &__background {
       position: absolute;
       top: 0;
       z-index: 99999;
       background-color: gray;
-      padding: px-to-rems(150, "bigDesktop") 17.2% px-to-rems(116, "bigDesktop");      
+      padding: px-to-rems(150, "mobiles") 7.7% px-to-rems(38, "mobiles");
     }
-    &__board{
+    &__board {
       background-color: white;
-      padding-top: px-to-rems(49, "bigDesktop");
+      padding-top: px-to-rems(39, "mobiles");
     }
-    &__back{
+    &__back {
       display: flex;
-      margin: 0 px-to-rems(52, "bigDesktop");
-      & img{
+      margin: 0 px-to-rems(35, "mobiles");
+      & img {
         width: 1.5rem;
-        margin-right: .25rem;
+        margin-right: 0.25rem;
       }
     }
-    &__name{
-      margin: px-to-rems(18, "bigDesktop") px-to-rems(52, "bigDesktop") 0;
+    &__name {
+      margin: px-to-rems(16, "mobiles") px-to-rems(35, "mobiles") 0;
     }
-    &__description{
-      margin: px-to-rems(36, "bigDesktop") px-to-rems(52, "bigDesktop") 0;
+    &__description {
+      margin: px-to-rems(16, "mobiles") px-to-rems(35, "mobiles") 0;
     }
-    &__poster{
+    &__poster {
       box-sizing: border-box;
-      padding:  px-to-rems(57, "bigDesktop") px-to-rems(16, "bigDesktop") px-to-rems(61, "bigDesktop");
+      padding: px-to-rems(36, "mobiles") 0 px-to-rems(48, "mobiles");
     }
-    &__other-projects{
-
-      padding:  px-to-rems(42, "bigDesktop") px-to-rems(86, "bigDesktop") px-to-rems(62, "bigDesktop");
+    &__other-projects {
+      padding: px-to-rems(39, "mobiles") px-to-rems(80, "mobiles")
+        px-to-rems(20, "mobiles");
       display: flex;
-      gap: px-to-rems(20, "bigDesktop");
+      gap: 2%;
       background-color: $beige;
     }
-    &__other-title{
+    &__other-title {
       margin-top: px-to-rems(10, "bigDesktop");
     }
-    &__wall{
-      & .work-together{
+    &__other-item {
+      flex: 0 0 48%;
+      & > figure {
+        @include cover(209, "mobiles");
+      }
+    }
+    &__wall {
+      & .work-together {
         background-color: white;
         padding: px-to-rems(72, "mobiles") 0 px-to-rems(139, "bigDesktop");
       }
     }
   }
+
+
+@include media-max("tabletsPortrait") {
+  &__background {
+    position: absolute;
+    top: 0;
+    z-index: 99999;
+    background-color: gray;
+    padding: px-to-rems(89, "mobiles") 4.9% px-to-rems(38, "mobiles");
+  }
+  &__board {
+    background-color: white;
+    padding-top: px-to-rems(19, "mobiles");
+  }
+  &__back {
+    display: flex;
+    margin: 0 px-to-rems(14, "mobiles");
+    & img {
+      width: 1.5rem;
+      margin-right: 0.25rem;
+    }
+  }
+  &__name {
+    margin: px-to-rems(16, "mobiles") px-to-rems(14, "mobiles") 0;
+  }
+  &__description {
+    margin: px-to-rems(16, "mobiles") px-to-rems(14, "mobiles") 0;
+  }
+  &__poster {
+    box-sizing: border-box;
+    padding: px-to-rems(36, "mobiles") 0 px-to-rems(48, "mobiles");
+  }
+  &__other-projects {
+    padding: px-to-rems(33, "mobiles") px-to-rems(37, "mobiles")
+      px-to-rems(28, "mobiles");
+    display: flex;
+    // gap: 2%;
+    background-color: $beige;
+  }
+  &__other-title {
+    margin-top: px-to-rems(10, "mobiles");
+  }
+  &__other-item {
+    flex: 0 0 48%;
+    &:first-child{
+      margin-right: 1%;
+    }&:last-child{
+      margin-left: 1%;
+    }
+    & > figure {
+      @include cover(111, "mobiles");
+    }
+  }
+  &__wall {
+    & .work-together {
+      background-color: white;
+      padding: px-to-rems(72, "mobiles") 0 px-to-rems(139, "bigDesktop");
+    }
+  }
+}
 }
