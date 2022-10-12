@@ -1,10 +1,12 @@
 let menuBurger = document.getElementById("menu-burger");
 let closeMenu = document.getElementById("closeMenu");
 let navbar = document.getElementById("navbar");
-
+let header = document.getElementById("header");
 
 import {
-    toggleMenu
+    toggleMenu,
+    changeColorInterval,
+    headerChange
 } from './functions.js';
 
 
@@ -29,3 +31,15 @@ closeMenu.addEventListener("click", toggleMenu);
     });
 
 }
+
+
+let currentLinks = navbar.querySelectorAll('a[href="'+document.URL+'"]');
+currentLinks.forEach(function(link) {
+    link.parentNode.classList.toggle('active');
+});
+
+
+changeColorInterval();
+
+window.onscroll = function() {    headerChange
+    ()};

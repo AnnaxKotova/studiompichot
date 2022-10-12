@@ -1,0 +1,66 @@
+.highlight {
+  &--blue {
+    background-color: $blue;
+    & h1,
+    p,
+    span {
+      color: $pink;
+    }
+    &.header a{       
+        color: $pink;       
+    }
+    & img{
+        filter: $black-to-pink;
+    }
+    & .button{
+        background-color: $pink;
+        color: $blue;
+    }
+
+  }
+  &--green {
+    background-color: $green;
+    & h1,
+    p,
+    span {
+      color: $lightPink;
+    }
+    &.header a{       
+        color: $lightPink;       
+    }
+    & img{
+        filter: $black-to-lightPink;
+    }
+    & .button{
+        background-color: $lightPink;
+        color: $green;
+    }
+  }
+  &--lightBlue {
+    background-color: $lightBlue ;
+    & h1,
+    p,
+    span {
+      color: $blue;
+    }
+    &.header a{       
+        color: $blue;       
+    }
+    & img{
+        filter: $black-to-blue;
+    }
+    & .button{
+        background-color: $blue;
+        color: $lightBlue ;
+    }
+  }
+  &--white {
+    background-color: white;
+    &.header a{       
+        color: $black;       
+    }
+    & img{
+        filter: unset;
+    }
+  }
+}

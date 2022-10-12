@@ -5,7 +5,8 @@
   margin: auto;
   position: sticky;
   top: 0;
-  background-color: white;
+  z-index: 99;
+  // background-color: white;
   
   @include media-min("smallDesktop") {
     padding: px-to-rems(40, "bigDesktop") 7.1%;
