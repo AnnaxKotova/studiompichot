@@ -6,7 +6,23 @@ let homepage;
 
 import { toggleMenu, changeColorInterval, headerChange } from "./functions.js";
 
-import {slideToggle} from "./slideToggle.js";
+import { slideToggle } from "./slideToggle.js";
+
+import { generateProjects, generatePoster } from "./generateProjects.js";
+
+const getProjectForPoster = (json) => setTimeout(function () {
+  let allProjectsButtons = document.querySelectorAll(".realisations__item");
+
+  allProjectsButtons.forEach(button => {
+    
+    button.addEventListener("click", function (event) {
+      let projectName = button.querySelector(".realisations__title").textContent;
+      generatePoster(json, projectName);
+    });
+  })
+  //we have to wain until all the images download
+}, 10);
+
 
 if (menuBurger) {
   menuBurger.addEventListener("click", toggleMenu);
@@ -40,15 +56,37 @@ if (homepage) {
 }
 
 let openersQuestions = Array.from(
-  document.getElementsByClassName("faq__open-question"));
+  document.getElementsByClassName("faq__open-question")
+);
 
 if (openersQuestions) {
   openersQuestions.forEach((openerQuestion) => {
     openerQuestion.addEventListener("click", function toggleQuestion(event) {
       // when the function is anonyme, this is undefined...
-      //class "opened" serves for arrow rotation 
+      //class "opened" serves for arrow rotation
       this.parentNode.classList.toggle("opened");
       slideToggle(this.nextElementSibling, 500);
     });
   });
 }
+
+fetch("../js/projects.json")
+  .then((res) => res.json())
+  .then((json) => {
+    let tagName = "Tout";
+    generateProjects(json, tagName);
+    getProjectForPoster(json);
+    let tags = document.querySelectorAll(".realisations__tag");
+    tags.forEach((tag) => {
+      tag.addEventListener("click", function (event) {
+        document.querySelector(".realisations__main").replaceChildren([]);
+        generateProjects(json, tag.textContent);
+        getProjectForPoster(json);
+      });
+
+    });
+
+
+    
+
+});

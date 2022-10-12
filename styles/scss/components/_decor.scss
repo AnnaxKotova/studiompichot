@@ -321,3 +321,88 @@
     }
   }
 }
+
+
+.contact{
+  @include media-min("smallDesktop") {
+    .text-figure {
+      width: px-to-rems(101, "bigDesktop");
+      transform: matrix(0.97, 0.24, -0.24, 0.97, 0, 0);
+      top: 54%;
+    right: 49%;
+      & p {
+        @include border-draw(160, 160, 61, -24, "bigDesktop");
+      }
+    }
+    .text {
+      width: px-to-rems(122, "bigDesktop");
+      transform: matrix(1, -0.09, 0.09, 1, 0, 0);
+      bottom: 1%;
+      right: 43%;
+
+    }
+
+    .arrow{
+      width: px-to-rems(122, "bigDesktop");
+      bottom: 8%;
+      right: 53%;
+      transform: rotate(-124deg) scaleY(-1);
+    }
+  }
+
+
+
+  @include media-min-and-max("tabletsPortrait", "smallDesktop") {
+    .text-figure {
+      width: px-to-rems(78, "mobiles");
+      transform: matrix(0.97, 0.24, -0.24, 0.97, 0, 0);
+      top: 54%;
+    right: 49%;
+      & p {
+        @include border-draw(109, 160, 63, -20, "mobiles");
+      }
+    }
+    .text {
+      width: px-to-rems(122, "mobiles");
+      transform: matrix(1, -0.09, 0.09, 1, 0, 0);
+      bottom: 1%;
+      right: 35%;
+
+    }
+
+    .arrow{
+      width: px-to-rems(122, "bigDesktop");
+      bottom: 8%;
+      right: 53%;
+      transform: rotate(-124deg) scaleY(-1);
+    }
+  }
+
+
+  @include media-max("tabletsPortrait") {
+    .text-figure {
+      width: px-to-rems(38, "mobiles");
+      transform: matrix(0.97, 0.24, -0.24, 0.97, 0, 0);
+      top: 22%;
+      right: 31%;
+      & p {
+        @include border-draw(109, 160, 63, -40, "mobiles");
+      }
+    }
+    .text {
+      width: px-to-rems(122, "mobiles");
+      transform: matrix(1, -0.09, 0.09, 1, 0, 0);
+      bottom: 28%;
+      right: 29%;
+
+    }
+
+    .arrow{
+      width: px-to-rems(122, "bigDesktop");
+      bottom: 28%;
+      right: 53%;
+      transform: rotate(-139deg);
+    }
+  }
+
+}
