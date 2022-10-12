@@ -52,3 +52,23 @@
         content: "";
     }
 }
+
+
+
+
+@mixin cover ($height, $size){
+    height: px-to-rems($height, $size);
+    & > img{
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+@mixin contain ($height, $size){
+    height: px-to-rems($height, $size);
+    & > img{
+        height: 100%;
+        object-fit: contain;
+    }
+}
+

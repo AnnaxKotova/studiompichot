@@ -1,83 +1,206 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 @font-face {
-    font-family: "Quikens";
-    src: local("Quikens"),
-         url("../../../fonts/Quikens-Regular.otf") format("otf");
-  }
-
-  @font-face {
-    font-family: "Quikens";
-    src: local("Helvetica Neue"),
-         url("../../../fonts/Helvetica-Neue.ttf") format("ttf");
-  }
-
-
-*{
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
+  font-family: "quikens";
+  src: url(/../../../fonts/Quikens-Regular.otf);
 }
 
-.quikens{
-    font-family: "Quikens";
+@font-face {
+  font-family: "Helvetica";
+  src: local("Helvetica Neue"),
+    url(/../../../fonts/Helvetica-Neue.ttf) format("ttf");
 }
 
-.bold{
-    font-weight: 700;
+* {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
 }
 
+.quikens {
+  font-family: "quikens";
+}
 
-
+.bold {
+  font-weight: 700;
+}
 
 //media query
 
-html{
-    @include media-min("bigDesktop"){
-        font-size: map-get($rootFontSize, "bigDesktop") * 1px;
-    }
+html {
+  @include media-min("bigDesktop") {
+    font-size: map-get($rootFontSize, "bigDesktop") * 1px;
+  }
 
-    @include media-min-and-max("mediumDesktop", "bigDesktop"){
-        font-size: map-get($rootFontSize, "mediumDesktop") * 1px;
-        // $fontsize: "mediumDesktop";
-    }
+  @include media-min-and-max("mediumDesktop", "bigDesktop") {
+    font-size: map-get($rootFontSize, "mediumDesktop") * 1px;
+    // $fontsize: "mediumDesktop";
+  }
 
-    @include media-min-and-max("smallDesktop", "mediumDesktop"){
-        font-size: map-get($rootFontSize, "smallDesktop") * 1px;
-        // $fontsize: "smallDesktop";
-    }
+  @include media-min-and-max("smallDesktop", "mediumDesktop") {
+    font-size: map-get($rootFontSize, "smallDesktop") * 1px;
+    // $fontsize: "smallDesktop";
+  }
 
-    @include media-min-and-max("tabletsLandscape", "smallDesktop"){
-        font-size: map-get($rootFontSize, "tabletsLandscape") * 1px;
-        // $fontsize: "tabletsLandscape";
-    }
+  @include media-min-and-max("tabletsLandscape", "smallDesktop") {
+    font-size: map-get($rootFontSize, "tabletsLandscape") * 1px;
+    // $fontsize: "tabletsLandscape";
+  }
 
-    @include media-min-and-max("mobiles", "tabletsLandscape"){
-        font-size: map-get($rootFontSize, "mobiles") * 1px;
-        // $fontsize: "mobiles";
-    }
+  @include media-min-and-max("mobiles", "tabletsLandscape") {
+    font-size: map-get($rootFontSize, "mobiles") * 1px;
+    // $fontsize: "mobiles";
+  }
 
-    @include media-max("mobiles"){
-        font-size: map-get($rootFontSize, "smallMobiles") * 1px;
-        // $fontsize: "mobiles";
-    }
+  @include media-max("mobiles") {
+    font-size: map-get($rootFontSize, "smallMobiles") * 1px;
+    // $fontsize: "mobiles";
+  }
 }
 
-
-
-.element-mobile{
-    @include media-min("tabletsPortrait"){
-      display: none !important;
+.element-mobile {
+  @include media-min("tabletsPortrait") {
+    display: none !important;
   }
+}
+
+.element-desktop {
+  @include media-max("tabletsPortrait") {
+    display: none !important;
+  }
+}
+
+img {
+  width: 100%;
+}
+
+h1 {
+  line-height: 1.45;
+  @include media-min("smallDesktop") {
+    font-size: px-to-rems(30, "bigDesktop");
+  }
+  @include media-min-and-max("tabletsPortrait", "smallDesktop") {
+    font-size: px-to-rems(24, "mobiles");
+  }
+  @include media-max("tabletsPortrait") {
+    font-size: px-to-rems(16, "mobiles");
+    line-height: px-to-rems(35, "mobiles");
+  }
+}
+
+h2 {
+  font-weight: 600;
+  @include media-min("smallDesktop") {
+    font-size: px-to-rems(40, "bigDesktop");
+    line-height: px-to-rems(60, "bigDesktop");
+    & img {
+      width: px-to-rems(26, "bigDesktop");
+    }
+  }
+  @include media-min-and-max("tabletsPortrait", "smallDesktop") {
+    font-size: px-to-rems(30, "mobiles");
+    & img {
+      width: px-to-rems(19, "mobiles");
+    }
+  }
+  @include media-max("tabletsPortrait") {
+    font-size: px-to-rems(24, "mobiles");
+    line-height: px-to-rems(35, "mobiles");
+    & img {
+      width: px-to-rems(15, "mobiles");
+    }
+  }
+}
+
+h3 {
+  @include media-min("smallDesktop") {
+    font-size: px-to-rems(30, "bigDesktop");
+    line-height: px-to-rems(46, "bigDesktop");
+  }
+  @include media-min-and-max("tabletsPortrait", "smallDesktop") {
+    font-size: px-to-rems(24, "mobiles");
+    line-height: px-to-rems(35, "mobiles");
+  }
+  @include media-max("tabletsPortrait") {
+    font-size: px-to-rems(24, "mobiles");
+    line-height: px-to-rems(35, "mobiles");
+  }
+}
+
+h4 {
+  font-weight: bold;
+  @include media-min("smallDesktop") {
+    font-size: px-to-rems(20, "bigDesktop");
+    line-height: px-to-rems(30, "bigDesktop");
   }
 
-  .element-desktop{
-    @include media-max("tabletsPortrait"){
-      display: none !important;
-  }
+  @include media-min-and-max("tabletsPortrait", "smallDesktop") {
+    font-size: px-to-rems(16, "mobiles");
   }
 
+  @include media-max("tabletsPortrait") {
+    font-size: px-to-rems(14, "mobiles");
+  }
+}
+
+.extreme--blue {
+  line-height: 1.5;
+  color: $blue;
+  font-weight: 700;
+  @include media-min("smallDesktop") {
+    font-size: px-to-rems(110, "bigDesktop");
+  }
+
+  @include media-min-and-max("tabletsPortrait", "smallDesktop") {
+    font-size: px-to-rems(70, "mobiles");
+  }
+
+  @include media-max("tabletsPortrait") {
+    font-size: px-to-rems(32, "mobiles");
+  }
+}
+
+strong {
+  font-weight: unset;
+  font-family: unset;
+}
+
+section {
+  @include media-min("smallDesktop") {
+    padding: px-to-rems(105, "bigDesktop") 14.2% px-to-rems(90, "bigDesktop")
+      7.1%;
+  }
+  @include media-min-and-max("tabletsPortrait", "smallDesktop") {
+    padding: four-px-to-rems(77, 80, 59, 80, "mobiles");
+  }
+  @include media-max("tabletsPortrait") {
+    padding: four-px-to-rems(52, 36, 2, 36, "mobiles");
+  }
+}
+
+.button {
+  border-radius: 4px;
   
-img{
-    width: 100%;
+  @include media-min("smallDesktop") {
+  padding: px-to-rems(19, "bigDesktop") 5%;
+  }
+  @include media-min-and-max("tabletsPortrait", "smallDesktop") {
+    padding: px-to-rems(19, "mobiles") 5%;
+  }
+  @include media-max("tabletsPortrait") {
+    padding: px-to-rems(15, "mobiles") 5%;
+  }
+  &--black {
+    color: white;
+    background-color: $black;
+  }
 }
 
+//for flying decorations
+.text-figure,
+.text {
+  text-align: center;
+  @include media-max("tabletsPortrait") {
+font-size: 12px;
+  }
+}
