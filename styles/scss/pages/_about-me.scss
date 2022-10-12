@@ -1,0 +1,47 @@
+.work-vision{
+    &__flower{
+        width: 2rem;
+        margin-bottom: 2rem;
+    }
+    @include media-min("smallDesktop") {
+    & > p{
+        width: 45%;
+    }
+}
+}
+
+
+.insider{
+    // padding-left: unset;
+    // padding-right: unset;
+    &__container{
+
+        @include media-min("smallDesktop") {
+            margin-top: px-to-rems(45, "bigDesktop");
+            display: flex;
+            gap: 1%;
+            & > *{
+                flex: 0 0 32%;
+                @include cover(332, "bigDesktop");
+            }
+        }
+        @include media-min-and-max("tabletsPortrait", "smallDesktop") {
+            margin-top: px-to-rems(45, "mobiles");
+            display: flex;
+            gap: 1%;
+            & > *{
+                flex: 0 0 32%;
+                @include cover(210, "mobiles");
+            }
+        }
+
+    @include media-max("tabletsPortrait") {
+        margin-top: px-to-rems(39, "mobiles");
+        margin-bottom: px-to-rems(185, "mobiles");
+        & > *{
+            @include contain(210, "mobiles");
+            margin-bottom: px-to-rems(12, "mobiles");
+        }
+    }
+}
+}

@@ -1,7 +1,7 @@
 .highlight {
   &--blue {
     background-color: $blue;
-    & h1,
+    & h1, h2,
     p,
     span {
       color: $pink;
@@ -9,7 +9,7 @@
     &.header a{       
         color: $pink;       
     }
-    & img{
+    &  p:after,  img:not(.no-highlight)  {
         filter: $black-to-pink;
     }
     & .button{
@@ -28,7 +28,7 @@
     &.header a{       
         color: $lightPink;       
     }
-    & img{
+    &  p:after,  img:not(.no-highlight)  {
         filter: $black-to-lightPink;
     }
     & .button{
@@ -46,7 +46,7 @@
     &.header a{       
         color: $blue;       
     }
-    & img{
+    &  p:after,  img:not(.no-highlight)  {
         filter: $black-to-blue;
     }
     & .button{

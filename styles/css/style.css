@@ -2,7 +2,7 @@
 .highlight--blue {
   background-color: #0B5ABD;
 }
-.highlight--blue h1,
+.highlight--blue h1, .highlight--blue h2,
 .highlight--blue p,
 .highlight--blue span {
   color: #F59EC1;
@@ -10,7 +10,7 @@
 .highlight--blue.header a {
   color: #F59EC1;
 }
-.highlight--blue img {
+.highlight--blue p:after, .highlight--blue img:not(.no-highlight) {
   filter: invert(100%) sepia(95%) saturate(7315%) hue-rotate(278deg) brightness(98%) contrast(91%);
 }
 .highlight--blue .button {
@@ -28,7 +28,7 @@
 .highlight--green.header a {
   color: #E0C6EE;
 }
-.highlight--green img {
+.highlight--green p:after, .highlight--green img:not(.no-highlight) {
   filter: invert(80%) sepia(36%) saturate(329%) hue-rotate(219deg) brightness(100%) contrast(87%);
 }
 .highlight--green .button {
@@ -46,7 +46,7 @@
 .highlight--lightBlue.header a {
   color: #0B5ABD;
 }
-.highlight--lightBlue img {
+.highlight--lightBlue p:after, .highlight--lightBlue img:not(.no-highlight) {
   filter: invert(20%) sepia(67%) saturate(3859%) hue-rotate(206deg) brightness(89%) contrast(91%);
 }
 .highlight--lightBlue .button {
@@ -585,7 +585,7 @@ strong {
 
 @media screen and (min-width: 1280px) {
   section {
-    padding: 5.8333333333rem 7.1% 5rem 14.2%;
+    padding: 5.8333333333rem 14.2% 5rem;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1280px) {
@@ -643,6 +643,9 @@ li {
 
 .centered-annonce {
   text-align: center;
+}
+.centered-annonce > * {
+  margin: auto;
 }
 .centered-annonce h2 {
   margin-bottom: 2rem;
@@ -1453,6 +1456,134 @@ li {
   }
 }
 
+@media screen and (min-width: 1280px) {
+  .work-vision .text-figure {
+    width: 5.6111111111rem;
+    transform: matrix(0.97, 0.24, -0.24, 0.97, 0, 0);
+    top: 17%;
+    right: 25%;
+  }
+  .work-vision .text-figure p {
+    position: relative;
+  }
+  .work-vision .text-figure p::after {
+    background-image: url("../../../assets/images/border-figure.svg");
+    background-size: 8.8888888889rem 8.8888888889rem;
+    position: absolute;
+    display: inline-block;
+    width: 8.8888888889rem;
+    top: -61px;
+    right: -24px;
+    height: 8.8888888889rem;
+    content: "";
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1280px) {
+  .work-vision .text-figure {
+    width: 5.5714285714rem;
+    transform: matrix(0.97, 0.24, -0.24, 0.97, 0, 0);
+    top: 17%;
+    right: 25%;
+  }
+  .work-vision .text-figure p {
+    position: relative;
+  }
+  .work-vision .text-figure p::after {
+    background-image: url("../../../assets/images/border-figure.svg");
+    background-size: 7.7857142857rem 11.4285714286rem;
+    position: absolute;
+    display: inline-block;
+    width: 7.7857142857rem;
+    top: -63px;
+    right: -20px;
+    height: 11.4285714286rem;
+    content: "";
+  }
+}
+@media screen and (max-width: 768px) {
+  .work-vision .text-figure {
+    width: 7.7142857143rem;
+    transform: matrix(0.97, 0.24, -0.24, 0.97, 0, 0);
+    top: 17%;
+    right: 25%;
+  }
+  .work-vision .text-figure p {
+    position: relative;
+  }
+  .work-vision .text-figure p::after {
+    background-image: url("../../../assets/images/border-figure.svg");
+    background-size: 7.7857142857rem 11.4285714286rem;
+    position: absolute;
+    display: inline-block;
+    width: 7.7857142857rem;
+    top: -63px;
+    right: -6px;
+    height: 11.4285714286rem;
+    content: "";
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .insider .avecamour {
+    width: 12.7777777778rem;
+    transform: matrix(0.98, -0.21, 0.21, 0.98, 0, 0);
+    top: 40%;
+    left: 10%;
+  }
+  .insider .text {
+    width: 12.7777777778rem;
+    transform: matrix(1, -0.09, 0.09, 1, 0, 0);
+    bottom: -10%;
+    right: 10%;
+  }
+  .insider .arrow {
+    width: 5.9444444444rem;
+    bottom: 0%;
+    right: 21%;
+    transform: rotate(-124deg) scaleY(-1);
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1280px) {
+  .insider .avecamour {
+    width: 16.4285714286rem;
+    transform: matrix(0.98, -0.21, 0.21, 0.98, 0, 0);
+    top: 40%;
+    left: 10%;
+  }
+  .insider .text {
+    width: 9.0714285714rem;
+    transform: matrix(1, -0.09, 0.09, 1, 0, 0);
+    bottom: -10%;
+    right: 7%;
+  }
+  .insider .arrow {
+    width: 5.9444444444rem;
+    bottom: 0%;
+    right: 21%;
+    transform: rotate(-124deg) scaleY(-1);
+  }
+}
+@media screen and (max-width: 768px) {
+  .insider .avecamour {
+    width: 16.4285714286rem;
+    transform: matrix(0.95, 0.31, -0.31, 0.95, 0, 0);
+    top: 15%;
+    right: 10%;
+  }
+  .insider .text {
+    width: 9.0714285714rem;
+    transform: matrix(1, -0.09, 0.09, 1, 0, 0);
+    bottom: 7%;
+    right: 7%;
+  }
+  .insider .arrow {
+    width: 5.9444444444rem;
+    bottom: 10%;
+    right: 31%;
+    transform: rotate(-124deg) scaleY(-1);
+  }
+}
+
 .intro {
   text-align: center;
   padding-left: unset;
@@ -1553,6 +1684,9 @@ li {
 }
 
 @media screen and (min-width: 1280px) {
+  .studio-presentation {
+    padding: 5.8333333333rem 7.1% 5rem 14.2%;
+  }
   .studio-presentation__poster {
     margin: 2.6111111111rem -2rem 9.3333333333rem 6.8%;
     display: flex;
@@ -1709,7 +1843,7 @@ li {
   }
 }
 
-.personal-presentation {
+.personal-presentation__main {
   background-color: #F5F5F5;
 }
 @media screen and (min-width: 1280px) {
@@ -1763,7 +1897,7 @@ li {
   }
 }
 @media screen and (max-width: 768px) {
-  .personal-presentation {
+  .personal-presentation:not(:first-of-type) {
     margin-top: 1.9285714286rem;
   }
   .personal-presentation__image {
@@ -2446,6 +2580,61 @@ li {
   .contact__data a img {
     width: 1.4285714286rem;
     margin-right: 1rem;
+  }
+}
+
+.work-vision__flower {
+  width: 2rem;
+  margin-bottom: 2rem;
+}
+@media screen and (min-width: 1280px) {
+  .work-vision > p {
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .insider__container {
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1%;
+  }
+  .insider__container > * {
+    flex: 0 0 32%;
+    height: 18.4444444444rem;
+  }
+  .insider__container > * > img {
+    height: 100%;
+    object-fit: cover;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1280px) {
+  .insider__container {
+    margin-top: 3.2142857143rem;
+    display: flex;
+    gap: 1%;
+  }
+  .insider__container > * {
+    flex: 0 0 32%;
+    height: 15rem;
+  }
+  .insider__container > * > img {
+    height: 100%;
+    object-fit: cover;
+  }
+}
+@media screen and (max-width: 768px) {
+  .insider__container {
+    margin-top: 2.7857142857rem;
+    margin-bottom: 13.2142857143rem;
+  }
+  .insider__container > * {
+    height: 15rem;
+    margin-bottom: 0.8571428571rem;
+  }
+  .insider__container > * > img {
+    height: 100%;
+    object-fit: contain;
   }
 }
 

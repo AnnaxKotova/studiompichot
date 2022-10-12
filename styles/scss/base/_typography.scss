@@ -171,8 +171,9 @@ strong {
 
 section {
   @include media-min("smallDesktop") {
-    padding: px-to-rems(105, "bigDesktop") 7.1% px-to-rems(90, "bigDesktop")
-       14.2%;
+    // padding: px-to-rems(105, "bigDesktop") 7.1% px-to-rems(90, "bigDesktop")
+    //    14.2%;
+        padding: px-to-rems(105, "bigDesktop") 14.2% px-to-rems(90, "bigDesktop");
   }
   @include media-min-and-max("tabletsPortrait", "smallDesktop") {
     padding: four-px-to-rems(77, 80, 59, 80, "mobiles");
@@ -221,11 +222,16 @@ li{
 
 .centered-annonce{
   text-align: center;
+  &
+  > * {margin: auto;}
   & h2{
     margin-bottom: 2rem;
   }
   & p{
     margin-bottom: 4rem;
   }
+
+  // padding-left: 5rem;
+  // padding-right: 5rem;
 
 }
