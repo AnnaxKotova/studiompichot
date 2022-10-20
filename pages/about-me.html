@@ -9,23 +9,22 @@
   </head>
   <body>
 
-
     <header id="header" class="header highlight--blue">
-      <figure class="header__logo element-desktop">
+      <a href="./home.html" class="header__logo element-desktop">
         <img src="../assets/images/logo__black--center.svg" />
-      </figure>
-      <figure class="header__logo element-mobile">
+      </a>
+      <a href="./home.html" class="header__logo element-mobile">
         <img src="../assets/images/logo__black--left.svg" />
-      </figure>
+      </a>
       <menu class="header__menu">
         <nav id="navbar" class="header__navbar">
           <div class="header__navbar--container">
-            <a href="./home.html" class="header__logo element-desktop">
-              <img src="../assets/images/logo__black--center.svg" />
-            </a>
-            <a href="./home.html" class="header__logo element-mobile">
+            <figure id="closeMenu" class="header__close element-mobile">
+              <img src="../assets/images/close.svg" />
+            </figure>
+            <figure class="element-mobile header__logo--mobile">
               <img src="../assets/images/logo__black--left.svg" />
-            </a>
+            </figure>
             <p class="text-figure header__text-figure element-mobile">
               Travaillons ensemble
             </p>
@@ -83,7 +82,7 @@
           </figure>
   
           <div class="personal-presentation__text">
-            <h2>Salut, moi c’est Marie !</h2>
+            <h2 class="quikens">Salut, moi c’est Marie !</h2>
             <p>
               Directrice artistique et graphiste basée à Paris, j’aide les
               entreprise à travailler leur image de marque.
@@ -106,7 +105,7 @@
       </section>
 
 
-      <section class="work-vision centered-annonce assets__container">
+      <section class="work-vision  centered-annonce assets__container">
         <img class="work-vision__flower" src="../assets/images/flower--black.svg" alt="" />
         <h2>Ma vision du travail bien fait</h2>
         <p>Depuis l’enfance j’ai toujours été attirée par la création. J’ai découvert le graphisme il y a 5 ans. Je suis tout de suite tombée amoureuse de la discipline. J’aime créer des images de marque et travailler avec vous, main dans la main pour répondre à vos objectifs business. J’aime prendre le temps de comprendre la vision qui anime votre entreprise.</p>
@@ -142,6 +141,46 @@
         <p>Discutons de votre projet par mail, téléphone ou autour d’un café !</p>
         <a href="./contact.html" class="button button--black">Me contacter</a>
       </section>
+
+
+      <section class="studio-presentation">
+
+        
+        <h2>
+          Mes réalisati<img src="../assets/images/flower--black.svg" alt="" />ns
+        </h2>
+        <p>Découvrez mon univers graphique à travers mes projets</p>
+        <div class="studio-presentation__realisations slider--container">
+          <div class="studio-presentation__line slider--line">
+            <div class="studio-presentation__item slider--item">
+              <figure>
+                <img src="../assets/PROJECTS/ARS/couverture.png" alt="" />
+              </figure>
+              <h4>ARSPIRIT</h4>
+            </div>
+            <div class="studio-presentation__item slider--item">
+              <figure>
+                <img src="../assets/PROJECTS/INDIANA/couverture.png" alt="" />
+              </figure>
+              <h4>ARSPIRIT</h4>
+            </div>
+            <div class="studio-presentation__item slider--item">
+              <figure>
+                <img src="../assets/PROJECTS/MINESIO/COUVERTURE.png" alt="" />
+              </figure>
+              <h4>MINESIO</h4>
+            </div>
+          </div>
+        </div>
+        <div class="studio-presentation__more">
+          <a href="./realisations.html"
+            ><span class="bold">Découvrir tous mes projets </span
+            ><img src="../assets/images/arrow--right.svg" alt=""
+          /></a>
+        </div>
+      </section>
+
+
 
       <footer class="footer">
         <div class="footer__container">

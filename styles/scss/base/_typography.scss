@@ -20,6 +20,10 @@
 
 .quikens {
   font-family: "quikens";
+  font-weight: 500;
+//  &.p{
+  line-height: 1.25;
+//  }
 }
 
 .bold {
@@ -92,7 +96,7 @@ h1 {
 }
 
 h2 {
-  font-weight: 600;
+  font-weight: 700;
   @include media-min("smallDesktop") {
     font-size: px-to-rems(40, "bigDesktop");
     line-height: px-to-rems(60, "bigDesktop");
@@ -116,7 +120,7 @@ h2 {
 }
 
 h3 {
-  font-weight: 600;
+  font-weight: 700;
   @include media-min("smallDesktop") {
     font-size: px-to-rems(24, "bigDesktop");
     line-height: px-to-rems(46, "bigDesktop");
@@ -132,7 +136,10 @@ h3 {
 }
 
 h4 {
-  font-weight: bold;
+
+  font-weight: 600;
+  
+  // font-weight: 800;
   @include media-min("smallDesktop") {
     font-size: px-to-rems(20, "bigDesktop");
     line-height: px-to-rems(30, "bigDesktop");
@@ -190,13 +197,13 @@ section {
   border-radius: 4px;
   
   @include media-min("smallDesktop") {
-  padding: px-to-rems(19, "bigDesktop") 5%;
+  padding: px-to-rems(19, "bigDesktop") px-to-rems(50, "bigDesktop");
   }
   @include media-min-and-max("tabletsPortrait", "smallDesktop") {
-    padding: px-to-rems(19, "mobiles") 5%;
+    padding: px-to-rems(19, "mobiles") px-to-rems(50, "mobiles");
   }
   @include media-max("tabletsPortrait") {
-    padding: px-to-rems(15, "mobiles") 5%;
+    padding: px-to-rems(15, "mobiles") 6.5%;
   }
   &--black {
     color: white;
@@ -221,6 +228,7 @@ li{
 
 
 .centered-annonce{
+
   text-align: center;
   &
   > * {margin: auto;}
@@ -234,4 +242,17 @@ li{
   // padding-left: 5rem;
   // padding-right: 5rem;
 
+}
+
+
+.work-together{
+  // @include media-min("smallDesktop") {
+    margin-top: 8rem;
+    // }
+    // @include media-min-and-max("tabletsPortrait", "smallDesktop") {
+    //   padding: px-to-rems(19, "mobiles") px-to-rems(50, "mobiles");
+    // }
+    // @include media-max("tabletsPortrait") {
+    //   padding: px-to-rems(15, "mobiles") 6.5%;
+    // }
 }

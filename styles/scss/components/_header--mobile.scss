@@ -1,9 +1,9 @@
 .header {
 
   @include media-max("tabletsPortrait") {
-    min-width: px-to-rems(342, "mobiles");
+    // min-width: px-to-rems(342, "mobiles");
     padding: four-px-to-rems(25, 36, 25, 36, "mobiles");
-
+    // padding: four-px-to-rems(52, 36, 2, 36, "mobiles");
     &__navbar {
       overflow-y: scroll;
       background-color: $gray;

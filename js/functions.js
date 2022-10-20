@@ -21,11 +21,18 @@ const changeColor = (elementToHighlight) =>{
 
 export const changeColorInterval = (elementToHighlight) =>{
     //need to create an anonymous function so the actual function isn't executed right away.
-    setInterval( function() { changeColor(elementToHighlight); }, 1000 );
+    setInterval( function() { changeColor(elementToHighlight); }, 5000 );
 }
 
 
 export const headerChange = () =>{
+    if (window.scrollY) {
+    header.classList.add('highlight--white'); 
+    } else     header.classList.remove('highlight--white'); 
+  }
+
+
+  export const readableServices = () =>{
     if (window.scrollY) {
     header.classList.add('highlight--white'); 
     } else     header.classList.remove('highlight--white'); 

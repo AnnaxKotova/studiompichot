@@ -55,6 +55,7 @@ currentLinks.forEach(function (link) {
 let homePage = (document.URL.split("/").includes("home.html"));
 let aboutMe = (document.URL.split("/").includes("about-me.html"));
 let realisations = (document.URL.split("/").includes("realisations.html"));
+let services = (document.URL.split("/").includes("services.html"));
 let openersQuestions = Array.from(
   document.getElementsByClassName("faq__open-question")
 );
@@ -111,4 +112,14 @@ fetch("../js/projects.json")
     
 
 });
+}
+
+
+if(services){
+  let servicesItems = document.querySelectorAll(".offers__item");
+  if (servicesItems.length === 4){
+    servicesItems.forEach(function (item) {
+      item.classList.add("readable-ipad");
+  });
+  }
 }

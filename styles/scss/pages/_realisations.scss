@@ -1,17 +1,22 @@
 .realisations {
+  padding-right: 7%;
   @include media-min("smallDesktop") {
     &__container {
       display: flex;
+      justify-content: space-between;
       margin-top: px-to-rems(158, "bigDesktop");
     }
     &__sidebar {
       flex: 0 0 18%;
     }
     &__tag {
-      margin-bottom: px-to-rems(9, "bigDesktop");
+      margin-bottom: px-to-rems(20, "bigDesktop");
+      &.bold{
+        font-weight: 800;
+      }
     }
     &__main {
-      flex: 0 0 72%;
+      flex: 0 0 78%;
       display: flex;
       flex-wrap: wrap;
       justify-content: flex-start;
@@ -25,7 +30,7 @@
       //   margin-left: 1%;
       // }
       & figure {
-        @include cover(298, "bigDesktop");
+        // @include cover(298, "bigDesktop");
         margin-bottom: px-to-rems(5, "bigDesktop");
       }
     }
@@ -44,6 +49,9 @@
     }
     &__tag {
       margin-bottom: px-to-rems(19, "mobiles");
+      &.bold{
+        font-weight: 800;
+      }
     }
     &__main {
       flex: 0 0 74.5%;
@@ -151,7 +159,7 @@
     &__wall {
       & .work-together {
         background-color: white;
-        padding: px-to-rems(56, "bigDesktop") 0 px-to-rems(139, "bigDesktop");
+        padding: 8rem 0;
       }
     }
   }
@@ -184,7 +192,7 @@
     }
     &__poster {
       box-sizing: border-box;
-      padding: px-to-rems(36, "mobiles") 0 px-to-rems(48, "mobiles");
+      padding: px-to-rems(36, "mobiles") 0 0;
     }
     &__other-projects {
       padding: px-to-rems(39, "mobiles") px-to-rems(80, "mobiles")
@@ -203,10 +211,11 @@
       }
     }
     &__wall {
-      & .work-together {
-        background-color: white;
-        padding: px-to-rems(72, "mobiles") 0 px-to-rems(139, "bigDesktop");
-      }
+        & .work-together {
+          background-color: white;
+          padding: 8rem 0;
+          margin-top: unset;
+        }
     }
   }
 
@@ -239,7 +248,7 @@
   }
   &__poster {
     box-sizing: border-box;
-    padding: px-to-rems(36, "mobiles") 0 px-to-rems(48, "mobiles");
+    padding: px-to-rems(36, "mobiles") 0 0;
   }
   &__other-projects {
     padding: px-to-rems(33, "mobiles") px-to-rems(37, "mobiles")
@@ -266,6 +275,7 @@
     & .work-together {
       background-color: white;
       padding: px-to-rems(72, "mobiles") 0 px-to-rems(139, "bigDesktop");
+      margin-top: unset;
     }
   }
 }

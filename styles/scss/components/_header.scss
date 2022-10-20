@@ -10,6 +10,7 @@
   
   @include media-min("smallDesktop") {
     padding: px-to-rems(40, "bigDesktop") 7.1%;
+    // padding: four-px-to-rems(52, 36, 2, 36, "mobiles");
     &__logo {
       width: px-to-rems(260, "bigDesktop");
     }

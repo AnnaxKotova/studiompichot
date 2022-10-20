@@ -1,7 +1,7 @@
 .contact {
   @include media-min("smallDesktop") {
     & h2 {
-      margin-top: px-to-rems(170, "bigDesktop");
+      margin-top: px-to-rems(90, "bigDesktop");
     }
     & > p {
       width: 28%;
@@ -12,6 +12,8 @@
     &__data {
       margin-top: px-to-rems(116, "bigDesktop");
       padding-left: px-to-rems(138, "bigDesktop");
+      
+    margin-bottom: px-to-rems(150, "bigDesktop");
       & a {
         display: flex;
         align-items: center;
@@ -27,12 +29,15 @@
   @include media-min-and-max("tabletsPortrait", "smallDesktop") {
     & h2 {
       margin-top: px-to-rems(90, "mobiles");
+      margin-left: 8rem;
     }
     & > p {
+      margin-left: 8rem;
       width: 41%;
     }
 
     &__data {
+      margin-left: 8rem;
       margin-top: px-to-rems(77, "mobiles");
       padding-left: px-to-rems(72, "mobiles");
       & a {
@@ -57,7 +62,7 @@
 
     &__data {
       margin-top: px-to-rems(56, "mobiles");
-      margin-bottom: px-to-rems(320, "mobiles");
+      margin-bottom: px-to-rems(250, "mobiles");
     //   padding-left: px-to-rems(72, "mobiles");
       & a {
         display: flex;
