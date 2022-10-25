@@ -143,11 +143,7 @@ function studiompichot_scripts() {
 	wp_enqueue_style( 'studiompichot-style-custom', get_template_directory_uri() . '/styles/css/main.css');
 
 	wp_enqueue_script( 'my-script', get_template_directory_uri() . '/js/script.js', array(), _S_VERSION, true );
-	wp_enqueue_script( 'studiompichot-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 
-	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
-		wp_enqueue_script( 'comment-reply' );
-	}
 }
 add_action( 'wp_enqueue_scripts', 'studiompichot_scripts' );
 
@@ -194,9 +190,10 @@ function add_module_to_my_script($tag, $handle, $src)
 
 function link_networks() {
 	$social_networks = [
-		"facebook" => "https://www.facebook.com/Minesio-103476665633490",
-		"linkedin" => "https://www.linkedin.com/company/83963609/admin/"];
+		"instagram" => "https://www.instagram.com/studio.mpichot/",
+		"linkedin" => "https://www.linkedin.com/in/marie-pichot-761541188/",
+		"behance" => "https://www.behance.net/studio-marie-pichot"];
 foreach ($social_networks as $key => $value){
-		echo '<figure><a href='.$value.' target="_blank"><img src="'.get_template_directory_uri() .'/images/pictos/'.$key.'.svg"></a>	</figure>' ;
+		echo '<figure><a href='.$value.' target="_blank"><img src="'.get_template_directory_uri() .'/assets/images/'.$key.'--black.svg"></a>	</figure>' ;
 	}
 }

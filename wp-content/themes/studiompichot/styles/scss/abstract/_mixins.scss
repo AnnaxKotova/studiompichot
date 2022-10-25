@@ -13,7 +13,7 @@
 }
 
 @mixin media-min-and-max($_key_min, $_key_max) {
-    @media screen and (min-width: ((map-get($breakpoints, $_key_min)) + 1px)) and (max-width: ((map-get($breakpoints, $_key_max)))) {
+    @media screen and (min-width: ((map-get($breakpoints, $_key_min)))) and (max-width: ((map-get($breakpoints, $_key_max)))) {
         &{ @content; }
     }
 }
@@ -41,13 +41,13 @@
     position: relative;
 
     &::after {
-        background-image: url("../../../assets/images/border-figure.svg");
+        background-image: url(./../../assets/images/border-figure.svg);
         background-size: px-to-rems($width, $size) px-to-rems($height, $size);
         position: absolute;
         display: inline-block;
         width: px-to-rems($width, $size);
         top: -($top)*1px;
-        right: ($right)*1px;
+        right: -($right)*1px;
         height: px-to-rems($height, $size);
         content: "";
     }

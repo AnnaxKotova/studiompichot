@@ -27,6 +27,7 @@ export const changeColorInterval = (elementToHighlight) =>{
 
 export const headerChange = () =>{
     if (window.scrollY) {
+        console.log("kdjfghlksjdfg");
     header.classList.add('highlight--white'); 
     } else     header.classList.remove('highlight--white'); 
   }
@@ -36,4 +37,21 @@ export const headerChange = () =>{
     if (window.scrollY) {
     header.classList.add('highlight--white'); 
     } else     header.classList.remove('highlight--white'); 
+  }
+
+
+  export const scrollFunction = (target) => {
+    if( (document.body.scrollTop > 70 || document.documentElement.scrollTop > 70)
+  //   && ($(window).scrollTop() + $(window).height() !== $(document).height())
+     ){
+      target.classList.remove('none');
+      target.classList.add('block');
+  
+    } else {
+      target.classList.add('none');
+      target.classList.remove('block');
+  
+  
+  
+  }
   }

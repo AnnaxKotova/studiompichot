@@ -15,7 +15,7 @@
       top: -6%;
       right: 18%;
       & p {
-        @include border-draw(200, 160, 56, -37, "bigDesktop");
+        @include border-draw(200, 160, 56, 37, "bigDesktop");
       }
     }
     .flower--pink {
@@ -51,7 +51,7 @@
       top: -4%;
       right: 18%;
       & p {
-        @include border-draw(200, 160, 45, -33, "bigDesktop");
+        @include border-draw(200, 160, 45, 33, "bigDesktop");
       }
     }
     .flower--pink {
@@ -88,7 +88,7 @@
       right: 7%;
       font-size: px-to-rems(12, "mobiles");
       & p {
-        @include border-draw(130, 160, 68, -14, "mobiles");
+        @include border-draw(130, 160, 68, 14, "mobiles");
       }
     }
     .flower--pink {
@@ -139,7 +139,7 @@
       bottom: 36%;
       right: 22%;
       & p {
-        @include border-draw(190, 160, 56, -49, "bigDesktop");
+        @include border-draw(190, 160, 56, 49, "bigDesktop");
       }
     }
   }
@@ -163,7 +163,7 @@
       bottom: 20%;
       right: 10%;
       & p {
-        @include border-draw(176, 132, 56, -44, "mobiles");
+        @include border-draw(176, 132, 56, 44, "mobiles");
       }
     }
   }
@@ -189,7 +189,7 @@
       top: 20%;
       right: 10%;
       & p {
-        @include border-draw(106, 132, 49, -21, "mobiles");
+        @include border-draw(106, 132, 49, 21, "mobiles");
       }
     }
   }
@@ -203,7 +203,7 @@
       top: -8%;
       right: -30%;
       & p {
-        @include border-draw(160, 160, 61, -24, "bigDesktop");
+        @include border-draw(160, 160, 61, 24, "bigDesktop");
       }
     }
   }
@@ -215,7 +215,7 @@
       bottom: 47%;
       right: -55%;
       & p {
-        @include border-draw(126, 132, 52, -18, "mobiles");
+        @include border-draw(126, 132, 52, 18, "mobiles");
       }
     }
   }
@@ -227,7 +227,7 @@
       top: 20%;
       right: 10%;
       & p {
-        @include border-draw(106, 132, 49, -21, "mobiles");
+        @include border-draw(106, 132, 49, 21, "mobiles");
       }
     }
   }
@@ -242,7 +242,7 @@
           bottom: 4%;
           left: 10%;
           & p {
-            @include border-draw(160, 160, 61, -24, "bigDesktop");
+            @include border-draw(160, 160, 61, 24, "bigDesktop");
           }
         }
       }
@@ -254,7 +254,7 @@
           bottom: 4%;
           left: 10%;
           & p {
-            @include border-draw(126, 132, 52, -18, "mobiles");
+            @include border-draw(126, 132, 52, 18, "mobiles");
           }
         }
       }
@@ -266,7 +266,7 @@
           bottom: 4%;
           left: 10%;
           & p {
-            @include border-draw(106, 132, 49, -21, "mobiles");
+            @include border-draw(106, 132, 49, 21, "mobiles");
           }
         }
       }
@@ -331,7 +331,7 @@
       top: 54%;
     right: 49%;
       & p {
-        @include border-draw(160, 160, 61, -24, "bigDesktop");
+        @include border-draw(160, 160, 61, 24, "bigDesktop");
       }
     }
     .text {
@@ -359,7 +359,7 @@
       top: 54%;
     right: 49%;
       & p {
-        @include border-draw(109, 160, 63, -20, "mobiles");
+        @include border-draw(109, 160, 63, 20, "mobiles");
       }
     }
     .text {
@@ -386,7 +386,7 @@
       top: 22%;
       right: 31%;
       & p {
-        @include border-draw(109, 160, 63, -40, "mobiles");
+        @include border-draw(109, 160, 63, 40, "mobiles");
       }
     }
     .text {
@@ -417,7 +417,7 @@
       top: 17%;
       right: 25%;
       & p {
-        @include border-draw(160, 160, 61, -24, "bigDesktop");
+        @include border-draw(160, 160, 61, 24, "bigDesktop");
       }
     }
 
@@ -431,7 +431,7 @@
       top: 17%;
       right: 25%;
       & p {
-        @include border-draw(109, 160, 63, -20, "mobiles");
+        @include border-draw(109, 160, 63, 20, "mobiles");
       }
     }
   }
@@ -443,7 +443,7 @@
       top: 17%;
       right: 25%;
       & p {
-        @include border-draw(109, 160, 63, -6, "mobiles");
+        @include border-draw(109, 160, 63, 6, "mobiles");
       }
     }
   }

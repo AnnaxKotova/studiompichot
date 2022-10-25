@@ -6,7 +6,7 @@ let homepage;
 let intro = document.querySelector(".intro");
 let personalPresentation = document.querySelector(".personal-presentation__about");
 
-import { toggleMenu, changeColorInterval, headerChange } from "./functions.js";
+import { toggleMenu, changeColorInterval, headerChange, scrollFunction } from "./functions.js";
 
 import { slideToggle } from "./slideToggle.js";
 
@@ -52,10 +52,10 @@ currentLinks.forEach(function (link) {
 
 //pages
 
-let homePage = (document.URL.split("/").includes("home.html"));
-let aboutMe = (document.URL.split("/").includes("about-me.html"));
-let realisations = (document.URL.split("/").includes("realisations.html"));
-let services = (document.URL.split("/").includes("services.html"));
+let homePage = (document.URL.split("/").length === 6);
+let aboutMe = (document.URL.split("/").includes("about-me"));
+let realisations = (document.URL.split("/").includes("realisations"));
+let services = (document.URL.split("/").includes("services"));
 let openersQuestions = Array.from(
   document.getElementsByClassName("faq__open-question")
 );
@@ -92,7 +92,7 @@ if (openersQuestions) {
 }
 
 if(realisations){
-fetch("../js/projects.json")
+fetch("../wp-content/themes/studiompichot/js/projects.json")
   .then((res) => res.json())
   .then((json) => {
     let tagName = "Tout";
@@ -123,3 +123,17 @@ if(services){
   });
   }
 }
+
+
+
+
+//backtotop + header color change on scroll
+let mybutton = document.getElementById("backToTop");
+window.onscroll = function() {scrollFunction(mybutton)};
+
+mybutton.addEventListener('click', function(e){
+document.documentElement.scrollTop = 0;
+  
+})
+
+scrollFunction(mybutton);

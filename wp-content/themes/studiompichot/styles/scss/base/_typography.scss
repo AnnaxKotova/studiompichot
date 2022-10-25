@@ -2,13 +2,22 @@
 
 @font-face {
   font-family: "quikens";
-  src: url(/../../../fonts/Quikens-Regular.otf);
+  src: local("quikens"), url(http://localhost/studiompichot/studiompichot/wp-content/themes/studiompichot/fonts/Quikens-Regular.otf) format("otf");
+}
+
+
+@font-face {
+  font-family: 'quikensregular';
+  src: url(../../fonts/quikens-regular-webfont.woff2) format('woff2'),
+       url(../../fonts/quikens-regular-webfont.woff) format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
   font-family: "Helvetica";
   src: local("Helvetica Neue"),
-    url(/../../../fonts/Helvetica-Neue.ttf) format("ttf");
+    url(../../fonts/Helvetica-Neue.ttf) format("ttf");
 }
 
 * {
@@ -19,7 +28,8 @@
 }
 
 .quikens {
-  font-family: "quikens";
+  font-family: 'quikensregular';
+
   font-weight: 500;
 //  &.p{
   line-height: 1.25;

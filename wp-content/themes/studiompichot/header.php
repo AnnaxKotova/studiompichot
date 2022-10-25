@@ -24,21 +24,30 @@
 <?php wp_body_open(); ?>
 
 
-<header id="header" class="header highlight--blue">
-      <a href="./home.html" class="header__logo element-desktop">
-        <img src="../assets/images/logo__black--center.svg" />
+<header id="header" 
+
+ <?php if ((is_front_page()) || (is_page('about-me'))) {
+echo 'class = "header highlight--blue"';}
+else echo 'class="header highlight--white"';
+?>
+>
+<a href="<?= home_url(); ?>" class="header__logo element-desktop">
+<img src=<?=get_template_directory_uri() . '/assets/images/logo__black--center.svg'?>>
       </a>
-      <a href="./home.html" class="header__logo element-mobile">
-        <img src="../assets/images/logo__black--left.svg" />
+      <a href="<?= home_url(); ?>" class="header__logo element-mobile">
+      <img src=<?=get_template_directory_uri() . '/assets/images/logo__black--left.svg'?>>
+
       </a>
       <menu class="header__menu">
         <nav id="navbar" class="header__navbar">
           <div class="header__navbar--container">
             <figure id="closeMenu" class="header__close element-mobile">
-              <img src="../assets/images/close.svg" />
+
+              <img src=<?=get_template_directory_uri() . '/assets/images/close.svg'?>>
             </figure>
             <figure class="element-mobile header__logo--mobile">
-              <img src="../assets/images/logo__black--left.svg" />
+              
+            <img src=<?=get_template_directory_uri() . '/assets/images/logo__black--left.svg'?>>
             </figure>
             <p class="text-figure header__text-figure element-mobile">
               Travaillons ensemble
@@ -46,46 +55,49 @@
             <div class="header__items">
               <a
                 class="element-mobile active"
-                href="./home.html"
+                href=<?= home_url(); ?>
                 >Accueil</a
               >
-              <a href="./services.html">Services</a>
-              <a href="./realisations.html" class="header__active">Réalisations</a>
-              <a href="./about-me.html">A propos</a>
-              <a href="./contact.html">Contact</a>
+              <a href=<?= get_permalink( get_page_by_path( 'services-web' ) )?>>Services</a>
+              <a href=<?= get_permalink( get_page_by_path( 'realisations' ) )?>>Réalisations</a>
+              <a href=<?= get_permalink( get_page_by_path( 'about-me' ) )?>>A propos</a>
+              <a href=<?= get_permalink( get_page_by_path( 'contact' ) )?>>Contact</a>
             </div>
             <div class="header__contacts element-mobile">
               <a href="tel:06 32 05 92 60">
-                <img src="../assets/images/phone.svg" />
+              <img src=<?=get_template_directory_uri() . '/assets/images/phone.svg'?>>
                 <span>06 32 05 92 60</span>
               </a>
 
               <a href="mailto:studio.mpichot@gmail.com">
-                <img src="../assets/images/email.svg" />
+                
+              <img src=<?=get_template_directory_uri() . '/assets/images/email.svg'?>>
+ 
                 <span>studio.mpichot@gmail.com</span>
               </a>
             </div>
             <div class="header__social-networks element-mobile">
-              <figure>
+            <?=link_networks()?>
+              <!-- <figure>
                 <a href="https://www.instagram.com/studio.mpichot/">
-                  <img src="../assets/images/instagram--black.svg" />
+                <img src=<?=get_template_directory_uri() . '/assets/images/instagram--black.svg'?>>
                 </a>
               </figure>
               <figure>
                 <a href="https://www.behance.net/studio-marie-pichot">
-                  <img src="../assets/images/behance--black.svg" alt=""
-                /></a>
+                <img src=<?=get_template_directory_uri() . '/assets/images/behance--black.svg'?>>
+                  </a>
               </figure>
               <figure>
                 <a href="https://www.linkedin.com/in/marie-pichot-761541188/">
-                  <img src="../assets/images/linkedin--black.svg" alt=""
-                /></a>
-              </figure>
+               
+                <img src=<?=get_template_directory_uri() . '/assets/images/linkedin--black.svg'?>></a>
+              </figure> -->
             </div>
           </div>
         </nav>
         <figure id="menu-burger" class="header__menu-burger element-mobile">
-          <img src="../assets/images/menu-burger.svg" />
+                   <img src=<?=get_template_directory_uri() . '/assets/images/menu-burger.svg'?>>
         </figure>
       </menu>
     </header>

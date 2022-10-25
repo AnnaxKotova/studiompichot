@@ -11,7 +11,10 @@
 
 ?>
 
-<div id="backToTop" class="backToTop none"><img src=<?=get_template_directory_uri() . '/images/pictos/top-arrow.svg'?>></div>
+<div id="backToTop" class="backToTop none">
+  <!-- <img src=<?=get_template_directory_uri() . '/assets/images/top-arrow.svg'?>> -->
+  ↑
+</div>
 	
 
 
@@ -19,27 +22,14 @@
 <footer class="footer">
         <div class="footer__container">
           <figure class="footer__logo">
-            <img src="../assets/images/logo__white--center.svg" />
+            <img src=<?=get_template_directory_uri() . '/assets/images/logo__white--center.svg'?>>
           </figure>
   
           <div class="footer__social-networks">
             <p>Suivez moi sur les réseaux sociaux !</p>
             <div class="footer__social-networks--container">
-              <figure>
-                <a href="https://www.instagram.com/studio.mpichot/">
-                  <img src="../assets/images/instagram--black.svg" />
-                </a>
-              </figure>
-              <figure>
-                <a href="https://www.behance.net/studio-marie-pichot">
-                  <img src="../assets/images/behance--black.svg" alt=""
-                /></a>
-              </figure>
-              <figure>
-                <a href="https://www.linkedin.com/in/marie-pichot-761541188/">
-                  <img src="../assets/images/linkedin--black.svg" alt=""
-                /></a>
-              </figure>
+
+              <?=link_networks()?>
             </div>
           </div>
   
@@ -58,7 +48,6 @@
   
         <a href="#" class="footer__legal-mentions">Mentions légales</a>
       </footer>
-
-    <script type="module" src="../js/script.js"></script>
+      <?php wp_footer(); ?>
   </body>
 </html>
