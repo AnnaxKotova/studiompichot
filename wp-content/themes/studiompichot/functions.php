@@ -141,6 +141,7 @@ function studiompichot_scripts() {
 
 	wp_enqueue_style( 'studiompichot-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_enqueue_style( 'studiompichot-style-custom', get_template_directory_uri() . '/styles/css/main.css');
+	//for styles inspection URL, enqueue the style.css file, not the main;
 
 	wp_enqueue_script( 'my-script', get_template_directory_uri() . '/js/script.js', array(), _S_VERSION, true );
 

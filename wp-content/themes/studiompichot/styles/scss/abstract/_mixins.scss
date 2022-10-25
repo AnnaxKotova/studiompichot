@@ -72,3 +72,24 @@
     }
 }
 
+//not that perfect solution, better to add some class ??
+@mixin stop-highlight($color){
+    @include media-min("tabletsPortrait") {
+        &.header  a{       
+            color: $color;       
+        }
+      }
+      @include media-max("tabletsPortrait") {
+      &.header > a{       
+          color: $color;       
+      }
+      & .header__navbar--container{
+        & img, p, p:after, span
+      {
+        color: black !important;
+        filter: unset !important;
+      }
+    }
+  }
+}
+

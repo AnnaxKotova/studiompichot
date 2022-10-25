@@ -2,7 +2,6 @@ let menuBurger = document.getElementById("menu-burger");
 let closeMenu = document.getElementById("closeMenu");
 let navbar = document.getElementById("navbar");
 let header = document.getElementById("header");
-let homepage;
 let intro = document.querySelector(".intro");
 let personalPresentation = document.querySelector(".personal-presentation__about");
 
@@ -66,9 +65,9 @@ console.log(realisations);
 
 if(homePage){
   changeColorInterval(intro);
-  window.onscroll = function () {
+  document.addEventListener("scroll", function () {
     headerChange();
-  };
+  });
 }
 
 if(aboutMe){

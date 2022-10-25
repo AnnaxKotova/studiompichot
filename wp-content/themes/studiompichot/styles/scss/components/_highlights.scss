@@ -1,4 +1,5 @@
 .highlight {
+
   &--blue {
     background-color: $blue;
     & h1, h2,
@@ -6,9 +7,8 @@
     span {
       color: $pink;
     }
-    &.header a{       
-        color: $pink;       
-    }
+@include stop-highlight($pink);
+
     &  p:after,  img:not(.no-highlight)  {
         filter: $black-to-pink;
     }
@@ -25,9 +25,9 @@
     span {
       color: $lightPink;
     }
-    &.header a{       
-        color: $lightPink;       
-    }
+    @include stop-highlight($lightPink);
+
+
     &  p:after,  img:not(.no-highlight)  {
         filter: $black-to-lightPink;
     }
@@ -43,9 +43,7 @@
     span {
       color: $blue;
     }
-    &.header a{       
-        color: $blue;       
-    }
+    @include stop-highlight($bluea);
     &  p:after,  img:not(.no-highlight)  {
         filter: $black-to-blue;
     }
@@ -57,11 +55,18 @@
   //for header shutdown
   &--white {
     background-color: white;
-    &.header a{       
+    &.header > a{       
         color: $black;       
     }
-    & img{
+    & img, p:after, p, span{
         filter: unset !important;
+        color: black !important;
+    }
+
+    @include media-min("tabletsPortrait") {
+      &.header  a{       
+        color: black !important;    
+      }
     }
   }
 }
