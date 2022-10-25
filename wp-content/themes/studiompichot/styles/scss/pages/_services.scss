@@ -33,6 +33,7 @@
       padding: px-to-rems(96, "bigDesktop") px-to-rems(34, "bigDesktop") px-to-rems(34, "bigDesktop");
       & figure {
         width: px-to-rems(148, "bigDesktop");
+        @include contain(148, "bigDesktop");
       }
       & h4 {
         margin-top: px-to-rems(34, "bigDesktop");
@@ -56,12 +57,13 @@
       justify-content: space-around;
     }
     &__item {
-      max-width: px-to-rems(246, "mobiles");
-      flex-shrink: 1;
+      // max-width: px-to-rems(186, "mobiles");
+      flex: 0 1 27%;
       padding: px-to-rems(36, "mobiles") px-to-rems(14, "mobiles") px-to-rems(20, "mobiles");
       margin-bottom: px-to-rems(14, "mobiles");
       & figure {
         width: px-to-rems(103, "mobiles");
+        @include contain(103, "mobiles");
       }
       & h4 {
         margin-top: px-to-rems(43, "mobiles");
@@ -80,8 +82,11 @@
         flex-direction: row;
         flex: 0 0 43%;
         max-width: unset;
-        & div{
+        & div:last-of-type{
           flex: 0 0 49.5%;
+          display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
           &:first-child{
             margin-right: 1%;
           }
@@ -101,6 +106,7 @@
       margin-bottom: px-to-rems(17, "mobiles");
       & figure {
         width: px-to-rems(93, "mobiles");
+        @include contain(93, "mobiles");
       }
       & h4 {
         margin-top: px-to-rems(32, "mobiles");

@@ -65,10 +65,12 @@
         margin-left: px-to-rems(32, "mobiles");
         &.active {
           position: relative;
+          font-weight: 900;
           &::before {
             position: absolute;
             left: px-to-rems(-32, "mobiles");
-            content: url(../../../assets/images/flower-pink.svg);
+
+            content: url(./../../assets/images/flower--pink.svg);
           }
         }
       }

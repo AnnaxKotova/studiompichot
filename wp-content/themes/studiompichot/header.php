@@ -54,11 +54,11 @@ else echo 'class="header highlight--white"';
             </p>
             <div class="header__items">
               <a
-                class="element-mobile active"
+                class="element-mobile"
                 href=<?= home_url(); ?>
                 >Accueil</a
               >
-              <a href=<?= get_permalink( get_page_by_path( 'services-web' ) )?>>Services</a>
+              <a href=<?= get_permalink( get_page_by_path( 'services/services-web' ) )?>>Services</a>
               <a href=<?= get_permalink( get_page_by_path( 'realisations' ) )?>>Réalisations</a>
               <a href=<?= get_permalink( get_page_by_path( 'about-me' ) )?>>A propos</a>
               <a href=<?= get_permalink( get_page_by_path( 'contact' ) )?>>Contact</a>

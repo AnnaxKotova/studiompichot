@@ -44,8 +44,10 @@ if (menuBurger) {
 }
 
 let currentLinks = navbar.querySelectorAll('a[href="' + document.URL + '"]');
+console.log(currentLinks);
 currentLinks.forEach(function (link) {
-  link.parentNode.classList.toggle("active");
+  console.log(link);
+  link.classList.toggle("active");
 });
 
 

@@ -43,7 +43,7 @@
     span {
       color: $blue;
     }
-    @include stop-highlight($bluea);
+    @include stop-highlight($blue);
     &  p:after,  img:not(.no-highlight)  {
         filter: $black-to-blue;
     }

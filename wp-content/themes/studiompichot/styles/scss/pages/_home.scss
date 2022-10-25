@@ -131,9 +131,9 @@
     &__item {
       flex: 0 0 32%;
       // min-width: px-to-rems(511, "bigDesktop");
-      & figure {
-        @include cover(374, "bigDesktop");
-      }
+      // & figure {
+      //   @include cover(374, "bigDesktop");
+      // }
       & h4 {
         margin-top: 1rem;
       }
@@ -175,9 +175,9 @@
     }
     &__item {
       flex: 0 0 32%;
-      & figure {
-        @include cover(205, "mobiles");
-      }
+      // & figure {
+      //   @include cover(205, "mobiles");
+      // }
       & h4 {
         margin-top: 1rem;
       }
@@ -226,9 +226,9 @@
       flex: 0 0 73%;
       // min-width:  px-to-rems(222, "mobiles");
       margin-right: 1.5rem ;
-      & figure {
-        @include cover(163, "mobiles");
-      }
+      // & figure {
+      //   @include cover(163, "mobiles");
+      // }
       & h4 {
         margin-top: 1rem;
       }
